@@ -1,0 +1,30 @@
+export interface Problem {
+    category_id: string;
+    category_name: string;
+    category_rank: number;
+    category_slug: string;
+    hasIDE: number;
+    problem_id: string;
+    problem_name: string;
+    problem_rank: number;
+    problem_slug: string;
+    subcategory_id: string;
+    subcategory_name: string;
+    subcategory_rank: number;
+    subcategory_slug: string;
+    subcategory_type: string;
+    company_tags: null | string;
+    ques_topic: Array<{ value: string; label: string }>;
+    difficulty: number;
+    cs_link: string;
+    sub_step_no: number;
+    topic_id: string;
+    lc_link: string;
+    gfg_link: string;
+    step_no: number;
+    post_link: string;
+    sub_step_title: string;
+    step_title: string;
+    question_title: string;
+    yt_link: string;
+}

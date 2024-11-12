@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Dropdowns</title>
+</head>
+
+<body>
+    <h2>Category ID</h2>
+    <select id="category_id"></select>
+
+    <h2>Category Name</h2>
+    <select id="category_name"></select>
+
+    <h2>Category Rank</h2>
+    <select id="category_rank"></select>
+
+    <h2>Category Slug</h2>
+    <select id="category_slug"></select>
+
+    <h2>Subcategory ID</h2>
+    <select id="subcategory_id"></select>
+
+    <h2>Subcategory Name</h2>
+    <select id="subcategory_name"></select>
+
+    <h2>Subcategory Rank</h2>
+    <select id="subcategory_rank"></select>
+
+    <h2>Subcategory Type</h2>
+    <select id="subcategory_type"></select>
+
+    <h2>Subcategory Slug</h2>
+    <select id="subcategory_slug"></select>
+
+    <h2>Problem ID</h2>
+    <select id="problem_id"></select>
+
+    <h2>Problem Slug</h2>
+    <select id="problem_slug"></select>
+
+    <h2>Problem Name</h2>
+    <select id="problem_name"></select>
+
+    <h2>Problem Rank</h2>
+    <select id="problem_rank"></select>
+
+    <h2>Has IDE</h2>
+    <select id="hasIDE"></select>
+
+    <h2>ID</h2>
+    <select id="id"></select>
+
+    <h2>Step No</h2>
+    <select id="step_no"></select>
+
+    <h2>Sub Step No</h2>
+    <select id="sub_step_no"></select>
+
+    <h2>SL No</h2>
+    <select id="sl_no"></select>
+
+    <h2>Step Title</h2>
+    <select id="step_title"></select>
+
+    <h2>Sub Step Title</h2>
+    <select id="sub_step_title"></select>
+
+    <h2>Question Title</h2>
+    <select id="question_title"></select>
+
+    <h2>Post Link</h2>
+    <select id="post_link"></select>
+
+    <h2>YT Link</h2>
+    <select id="yt_link"></select>
+
+    <h2>GFG Link</h2>
+    <select id="gfg_link"></select>
+
+    <h2>CS Link</h2>
+    <select id="cs_link"></select>
+
+    <h2>LC Link</h2>
+    <select id="lc_link"></select>
+
+    <h2>Company Tags</h2>
+    <select id="company_tags"></select>
+
+    <h2>Difficulty</h2>
+    <select id="difficulty"></select>
+
+    <h2>Ques Topic</h2>
+    <select id="ques_topic"></select>
+
+    <h2>Match Found</h2>
+    <select id="matchFound"></select>
+
+    <h2>TUF Link</h2>
+    <select id="tuf_link"></select>
+
+    <h2>Source</h2>
+    <select id="source"></select>
+
+    <script>
+        // Sample JSON data
+        const jsonData = [
+            {
+                "category_id": "sorting",
+                "category_name": "Sorting ",
+                "category_rank": 2,
+                "category_slug": "sorting",
+                "subcategory_id": "sorting_algorithms",
+                "subcategory_name": "Algorithms",
+                "subcategory_rank": 1,
+                "subcategory_type": "study",
+                "subcategory_slug": "algorithms",
+                "problem_id": "sorting_sorting_algorithms_selectionsort",
+                "problem_slug": "selection-sort",
+                "problem_name": "Selection Sort",
+                "problem_rank": 1,
+                "hasIDE": 1,
+                "id": "slctinsrt",
+                "step_no": 2,
+                "sub_step_no": 1,
+                "sl_no": 1,
+                "step_title": "Learn Important Sorting Techniques",
+                "sub_step_title": "Sorting-I",
+                "question_title": "Selection Sort",
+                "post_link": "https://takeuforward.org/sorting/selection-sort-algorithm/",
+                "yt_link": "https://youtu.be/HGk_ypEuS24?t=167",
+                "gfg_link": "https://bit.ly/3ppA6YJ",
+                "cs_link": "https://www.codingninjas.com/studio/problems/selection-sort_624469?utm_source=striver\u0026utm_medium=website\u0026utm_campaign=a_zcoursetuf",
+                "lc_link": null,
+                "company_tags": null,
+                "difficulty": 0,
+                "ques_topic": "[{\"value\":\"sorting\",\"label\":\"Sorting\"},{\"value\":\"arrays\",\"label\":\"Arrays\"},{\"value\":\"data-structure\",\"label\":\"Data Structures\"}]",
+                "matchFound": true,
+                "tuf_link": "https://takeuforward.org/plus/data-structures-and-algorithm/sorting/algorithms/selection-sort",
+                "source": "tuf"
+            }
+        ];
+
+        // Function to populate the dropdown lists
+        function populateDropdowns(jsonData) {
+            const properties = Object.keys(jsonData[0]);
+
+            properties.forEach(property => {
+                const selectElement = document.getElementById(property);
+                if (selectElement) {
+                    selectElement.innerHTML = '';
+
+                    // Get unique values for the property
+                    const uniqueValues = [...new Set(jsonData.map(item => item[property]))];
+
+                    uniqueValues.forEach(value => {
+                        const option = document.createElement('option');
+                        option.value = value;
+                        option.text = value;
+                        selectElement.appendChild(option);
+                    });
+                }
+            });
+        }
+
+        // Call the function to populate the dropdowns
+        populateDropdowns(jsonData);
+    </script>
+</body>
+
+</html>

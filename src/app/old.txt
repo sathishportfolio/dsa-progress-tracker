@@ -1,0 +1,125 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
+import { Problem } from './models/Problem';
+import { Preference } from './models/Preference';
+import { Progress } from './models/Progress';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [HttpClientModule, RouterOutlet, NgbAccordionModule],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+
+  // items = ['First', 'Second', 'Third'];
+  problems: Problem[];
+  properties: String[];
+  preference: Preference;
+  progressMap: Map<String, Progress> = new Map();
+
+
+  constructor(private httpClient: HttpClient) {
+    this.problems = [];
+    this.properties = [];
+    this.preference = new Preference();
+  }
+
+  ngOnInit() {
+    // Load problems
+    this.httpClient.get<Problem[]>('assets/json/problems.json').subscribe(data => {
+      this.problems = data;
+
+      this.loadPrefrences();
+      this.loadProgress();
+
+      this.properties = Object.keys(this.problems[0]);
+
+      const levelProblems = this.problems.filter(problem => problem.subcategory_rank == this.preference.level);
+
+      this.updateProblemProgress(levelProblems[1].problem_slug, "study");
+      this.updatePrefrences();
+
+      console.log(this.properties);
+      console.log(this.problems);
+    });
+  }
+
+  loadPrefrences() {
+    let storedPreference = localStorage.getItem('preference');
+    if (storedPreference) {
+      this.preference = JSON.parse(storedPreference);
+    }
+  }
+
+  updatePrefrences() {
+    localStorage.setItem('preference', JSON.stringify(this.preference));
+  }
+
+  loadProgress() {
+    let storedProgressMap = localStorage.getItem('progressMap');
+    if (storedProgressMap) {
+      let parsedArray = JSON.parse(storedProgressMap);
+      this.progressMap = new Map(parsedArray);
+    }
+  }
+
+  updateProblemProgress(key: String, status: keyof Progress) {
+    if (this.progressMap.size > 0) {
+      if (this.progressMap.has(key)) {
+        let progress = this.progressMap.get(key);
+        if (progress) {
+          this.setProgress(progress, status);
+        }
+      } else {
+        const progress = new Progress();
+        this.setProgress(progress, status);
+        this.progressMap.set(key, progress);
+      }
+    } else {
+      const progress = new Progress();
+      this.setProgress(progress, status);
+
+      this.progressMap = new Map([[key, progress]]);
+    }
+
+    let jsonProgressMap = JSON.stringify(Array.from(this.progressMap.entries()));
+
+    localStorage.setItem('progressMap', jsonProgressMap);
+  }
+
+  setProgress(progress: Progress, status: string) {
+    switch (status) {
+      case "done":
+        progress.done = Date.now();
+        break;
+      case "learn":
+        progress.learn = Date.now();
+        break;
+      case "study":
+        progress.study = Date.now();
+        break;
+      case "read":
+        progress.read = Date.now();
+        break;
+      case "write":
+        progress.write = Date.now();
+        break;
+      case "teach":
+        progress.teach = Date.now();
+        break;
+      case "revisions":
+        if (!progress.revisions) {
+          progress.revisions = [];
+        }
+        progress.revisions.push(Date.now());
+        break;
+
+      default:
+        break;
+    }
+  }
+}

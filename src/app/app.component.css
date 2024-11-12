@@ -1,0 +1,60 @@
+/* data-bs-theme="dark" */
+
+.accordion-button:not(.collapsed) {
+    color: orangered;
+    font-weight: bold;
+    background-color: #343a40;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px dotted #999;
+    border-radius: 50% !important;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    /* Added for proper positioning of the tick */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #4CAF50;
+    border: none;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    /* Adjusted for new size */
+    top: 4px;
+    /* Adjusted for new size */
+    width: 8px;
+    /* Adjusted for new size */
+    height: 14px;
+    /* Adjusted for new size */
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+a {
+    font-weight: 500;
+    color: rgb(144 144 144 / var(--tw-text-opacity));
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-random {
+    border: 2px solid #7D7F7D;
+    background-color: transparent;
+    color: #7D7F7D;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
