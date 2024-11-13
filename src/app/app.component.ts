@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { NgbAccordionModule, NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
-import { Syllabus } from './models/Syllabus';
+import { NgbAccordionModule, NgbProgressbarModule, ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Syllabus, Problem } from './models/Syllabus';
 import { Preference } from './models/Preference';
 import { Progress } from './models/Progress';
 import { GroupedCategories } from './models/GroupedCategories';
@@ -23,7 +23,10 @@ export class AppComponent {
   preference: Preference = new Preference();
   progressMap: Map<String, Progress> = new Map();
   numbers = Array.from({ length: 11 }, (_, i) => i);
-  items = ['First', 'Second', 'Third'];
+
+  private modalService = inject(NgbModal);
+  closeResult = '';
+  selectedProblem!: Problem;
 
   constructor(private httpClient: HttpClient) { }
 
@@ -31,16 +34,29 @@ export class AppComponent {
     this.loadProblems();
   }
 
+  open(content: TemplateRef<any>, problem: Problem) {
+    this.selectedProblem = problem;
+    this.modalService.open(content);
+  }
+
   private loadProblems(): void {
-    this.httpClient.get<Syllabus>('assets/json/problems.json').subscribe(
-      data => {
-        this.syllabus = data;
-        this.loadPreferences();
-      },
-      error => {
-        console.error('Failed to load problems:', error);
-      }
-    );
+    const storedSyllabus = localStorage.getItem('syllabus');
+
+    if (storedSyllabus) {
+      this.syllabus = JSON.parse(storedSyllabus);
+      this.loadPreferences();
+    } else {
+      this.httpClient.get<Syllabus>('assets/json/problems.json').subscribe(
+        data => {
+          this.syllabus = data;
+          localStorage.setItem('syllabus', JSON.stringify(this.syllabus));
+          this.loadPreferences();
+        },
+        error => {
+          console.error('Failed to load problems:', error);
+        }
+      );
+    }
   }
 
   private loadPreferences(): void {
