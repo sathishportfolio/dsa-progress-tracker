@@ -18,6 +18,7 @@ export interface Problem {
     yt_link: string; // Link to a YouTube video
     step_title: string; // Title of the step in learning process
     sub_step_title: string; // Title of the sub-step in learning process
+    videos_link: String[];
 
     isDone: any;
 }
@@ -32,6 +33,10 @@ export interface Subcategory {
     subcategory_rank: number; // Rank of the subcategory
     subcategory_type: string; // Type of the subcategory (e.g., study)
     problems: Problem[]; // Array of problems under this subcategory
+
+    totalProblems: number;
+    doneProblems: number;
+    donePercent: number;
 }
 
 // models/category.model.ts
@@ -41,6 +46,10 @@ export interface Category {
     category_rank: number; // Rank of the category
     category_slug: string; // Slug for the category
     subcategories: Subcategory[]; // Array of subcategories under this category
+
+    totalProblems: number;
+    doneProblems: number;
+    donePercent: number;
 }
 
 // models/data.model.ts (optional)

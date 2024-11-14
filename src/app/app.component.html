@@ -1,6 +1,6 @@
 <div class="container">
 
-    <ng-template #content let-modal>
+    <!-- <ng-template #content let-modal>
         <div class="modal-header">
             <h4 class="modal-title" id="modal-basic-title">Update problem</h4>
             <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
@@ -17,7 +17,7 @@
         <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary" (click)="modal.close('Save click')">Save</button>
         </div>
-    </ng-template>
+    </ng-template> -->
 
 
     <div class="row align-items-center">
@@ -41,11 +41,14 @@
     <ng-container>
         <div class="row">
             <div class="col-md-4">
-                <b style="color: orangered">Level 1 Progress ( 1 of 1 - Remaining 0 ) : </b>
+                <b style="color: orangered"><span *ngIf="preference.level">Level {{ preference.level }}</span> Progress
+                    ( {{filteredDoneProblems}} of {{filteredTotalProblems}} -
+                    Remaining {{filteredTotalProblems-filteredDoneProblems}} ) : </b>
             </div>
             <div class="col-md-8" style="margin-top: 5px;">
-                <ngb-progressbar class="mb-3" type="warning" [value]="30" [striped]="true" [animated]="true">
-                    <i>30 %</i>
+                <ngb-progressbar class="mb-3" type="warning" [value]="filteredDonePercent" [striped]="true"
+                    [animated]="true">
+                    <i>{{filteredDonePercent}} %</i>
                 </ngb-progressbar>
             </div>
         </div>
@@ -53,38 +56,35 @@
 
     <div ngbAccordion [closeOthers]="true">
         @for (category of filteredSyllabus; track category) {
-        <div ngbAccordionItem [collapsed]="category.category_name !== 'Sorting'">
+        <div ngbAccordionItem [collapsed]="category.category_slug !== preference.category">
             <h2 ngbAccordionHeader>
-                <button ngbAccordionButton>
-                    <!-- <input class="form-check-input" type="checkbox" /> -->
-                    <span class="ms-2"> {{ category.category_name }}</span>
+                <button ngbAccordionButton class="d-flex justify-content-between align-items-center w-100">
+                    <div class="col-md-3">
+                        <span class="ms-2"> {{ category.category_name }} ( {{ category.doneProblems }} / {{
+                            category.totalProblems
+                            }} )</span>
+                    </div>
+                    <div class="col-md-8" style="margin-top: 5px;">
+                        <ngb-progressbar class="" type="primary" [value]="category.donePercent" [striped]="true"
+                            [animated]="true">
+                            <i>{{category.donePercent}} %</i>
+                        </ngb-progressbar>
+                    </div>
                 </button>
             </h2>
             <div ngbAccordionCollapse>
                 <div ngbAccordionBody>
                     <ng-template>
-                        <!-- Main content for the category -->
-                        <div class="row">
-                            <div class="col-md-2">
-                                <b>Progress : </b>
-                            </div>
-                            <div class="col-md-10" style="margin-top: 5px;">
-                                <ngb-progressbar class="mb-3" type="primary" [value]="40" [striped]="true"
-                                    [animated]="true">
-                                    <i>40 %</i>
-                                </ngb-progressbar>
-                            </div>
-                        </div>
 
                         <!-- Nested Accordion for Subcategories -->
                         <div ngbAccordion [closeOthers]="true">
                             @for (subcategory of category.subcategories; track subcategory) {
-                            <div ngbAccordionItem [collapsed]="subcategory.subcategory_name !== 'Algorithms'">
+                            <div ngbAccordionItem [collapsed]="subcategory.subcategory_slug !== preference.subcategory">
                                 <h2 ngbAccordionHeader>
                                     <button ngbAccordionButton>
                                         <!-- <input class="form-check-input" type="checkbox" /> -->
                                         <span class="ms-2"> {{ subcategory.subcategory_name }}
-                                            ( 0 / {{ subcategory.problems.length}})</span>
+                                            ( {{subcategory.doneProblems}} / {{subcategory.totalProblems}} )</span>
                                     </button>
                                 </h2>
                                 <div ngbAccordionCollapse>
@@ -97,7 +97,7 @@
                                                         <th class="text-center">Difficulty</th>
                                                         <th>Problem</th>
                                                         <th class="text-center">Article</th>
-                                                        <th class="text-center">YouTube</th>
+                                                        <th class="text-center">Video</th>
                                                         <th class="text-center">Tuf+</th>
                                                         <th class="text-center">GFG</th>
                                                         <th class="text-center">CN</th>
@@ -113,7 +113,7 @@
                                                             <div class="form-check form-check-inline">
                                                                 <input class="form-check-input" type="checkbox"
                                                                     [(ngModel)]="problem.isDone"
-                                                                    (change)="onCheckboxChange($event, 'problem', problem.problem_id, 'done')">
+                                                                    (change)="onCheckboxChange($event, problem, problem.problem_id, 'done')">
                                                             </div>
                                                         </td>
                                                         <td class="text-center">
@@ -125,13 +125,13 @@
                                                                 class="badge bg-danger">Hard</span>
                                                         </td>
                                                         <td>
-                                                            <a href="javascript:void" (click)="open(content, problem)">
+                                                            <!-- <a href="javascript:void" (click)="open(content, problem)">
                                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                                     viewBox="0 0 24 24" width="24px" height="24px">
                                                                     <path fill="#7D7F7D"
                                                                         d="M 18 2 L 15.585938 4.4140625 L 19.585938 8.4140625 L 22 6 L 18 2 z M 14.076172 5.9238281 L 3 17 L 3 21 L 7 21 L 18.076172 9.9238281 L 14.076172 5.9238281 z" />
                                                                 </svg>
-                                                            </a>
+                                                            </a> -->
 
                                                             {{ problem.problem_name }}
 
@@ -142,11 +142,19 @@
                                                                 <img src="/assets/images/article.svg">
                                                             </a>
                                                         </td>
-                                                        <td class="text-center">
+                                                        <td class="text-center td-content">
                                                             <a *ngIf="problem.yt_link" [href]="problem.yt_link"
                                                                 target="_blank">
                                                                 <img src="/assets/images/yt.svg">
                                                             </a>
+
+                                                            <ng-container
+                                                                *ngFor="let link of problem.videos_link; let i = index">
+                                                                <a [href]="link" target="_blank">
+                                                                    <span class="badge bg-primary">{{ i + 1
+                                                                        }}</span>
+                                                                </a>
+                                                            </ng-container>
                                                         </td>
                                                         <td class="text-center">
                                                             <a *ngIf="problem.tufplus_link"

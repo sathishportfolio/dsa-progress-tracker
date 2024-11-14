@@ -20,6 +20,11 @@ import { BrowserModule } from '@angular/platform-browser';
 export class AppComponent {
   syllabus: Syllabus = [];
   filteredSyllabus: Syllabus = [];
+
+  filteredTotalProblems: number = 0;
+  filteredDoneProblems: number = 0;
+  filteredDonePercent: number = 0;
+
   preference: Preference = new Preference();
   progressMap: Map<String, Progress> = new Map();
   numbers = Array.from({ length: 11 }, (_, i) => i);
@@ -78,8 +83,21 @@ export class AppComponent {
     })).filter(category => category.subcategories.length > 0);
   }
 
-  updatePreferences(property: keyof Preference, value: number): void {
-    this.preference[property] = Number(value);
+  updatePreferences(property: keyof Preference, value: any): void {
+    switch (property) {
+      case 'level':
+        this.preference.level = Number(value);
+        break;
+      case 'category':
+        this.preference.category = String(value);
+        break;
+      case 'subcategory':
+        this.preference.category = String(value);
+        break;
+      default:
+        break;
+    }
+
     localStorage.setItem('preference', JSON.stringify(this.preference));
 
     this.loadProgress();
@@ -91,6 +109,10 @@ export class AppComponent {
       this.preference = new Preference();
     }
 
+    this.filteredTotalProblems = 0;
+    this.filteredDoneProblems = 0;
+    this.filteredDonePercent = 0;
+
     this.filteredSyllabus = this.filterCategoriesBySubcategoryRank(this.preference.level);
     const storedProgressMap = localStorage.getItem('progressMap');
     if (storedProgressMap) {
@@ -98,18 +120,63 @@ export class AppComponent {
       this.progressMap = new Map(parsedArray);
 
       this.filteredSyllabus.forEach((category) => {
+        // Initialize counters for the category
+        category.totalProblems = 0;
+        category.doneProblems = 0;
+
         category.subcategories.forEach((subcategory) => {
+          // Initialize counters for the subcategory
+          subcategory.totalProblems = 0;
+          subcategory.doneProblems = 0;
+
           subcategory.problems.forEach((problem) => {
+            // Increment total problems count
+            subcategory.totalProblems++;
+
+            // Check if the problem is done and update accordingly
             if (this.progressMap.has(problem.problem_id)) {
               problem.isDone = this.progressMap.get(problem.problem_id)?.done;
+              if (problem.isDone) {
+                // Increment done problems count for subcategory and category
+                subcategory.doneProblems++;
+                category.doneProblems++;
+              }
             }
+
+            // Increment total problems count for the category
+            category.totalProblems++;
           });
+
+          // Calculate donePercent for the subcategory
+          if (subcategory.totalProblems > 0) {
+            subcategory.donePercent = Number(((subcategory.doneProblems / subcategory.totalProblems) * 100).toFixed(2));
+          } else {
+            subcategory.donePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
+          }
         });
+
+        // Calculate donePercent for the category
+        if (category.totalProblems > 0) {
+          category.donePercent = Number(((category.doneProblems / category.totalProblems) * 100).toFixed(2));
+        } else {
+          category.donePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
+        }
+
+        // Update filtered totals
+        this.filteredTotalProblems += category.totalProblems;
+        this.filteredDoneProblems += category.doneProblems;
       });
+
+      // Calculate filtered done percent after processing all categories
+      if (this.filteredTotalProblems > 0) {
+        this.filteredDonePercent = Number(((this.filteredDoneProblems / this.filteredTotalProblems) * 100).toFixed(2));
+      } else {
+        this.filteredDonePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
+      }
     }
   }
 
-  onCheckboxChange(event: Event, type: String, key: String, status: keyof Progress): void {
+  onCheckboxChange(event: Event, problem: Problem, key: String, status: keyof Progress): void {
     const target = event.target as HTMLInputElement;
 
     if (target.checked) {
@@ -120,8 +187,13 @@ export class AppComponent {
       this.progressMap.delete(key);
     }
 
+    this.preference.category = problem.category_slug;
+    this.preference.subcategory = problem.subcategory_slug;
+
+    localStorage.setItem('preference', JSON.stringify(this.preference));
     localStorage.setItem('progressMap', JSON.stringify(Array.from(this.progressMap.entries())));
 
+    this.loadProgress();
   }
 
   private setProgress(progress: Progress, status: keyof Progress): void {

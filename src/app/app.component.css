@@ -58,3 +58,8 @@ a:hover {
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
+
+.td-content>* {
+    margin: 0 5px;
+    /* Add horizontal margin for spacing between items */
+}
