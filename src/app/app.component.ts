@@ -6,9 +6,10 @@ import { NgbAccordionModule, NgbProgressbarModule, ModalDismissReasons, NgbModal
 import { Syllabus, Problem, Category } from './models/Syllabus';
 import { Preference } from './models/Preference';
 import { Progress } from './models/Progress';
-import { GroupedCategories } from './models/GroupedCategories';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { Auth, signInWithEmailAndPassword } from '@angular/fire/auth';
+import { DataService } from './DataService';
 
 @Component({
   selector: 'app-root',
@@ -33,10 +34,22 @@ export class AppComponent {
   closeResult = '';
   selectedProblem!: Problem;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private auth: Auth, private httpClient: HttpClient, private dataService: DataService) { }
 
   ngOnInit() {
     this.loadProblems();
+
+    signInWithEmailAndPassword(this.auth, "rsathishkumar4@gmail.com", "Easytype@2024")
+      .then(() => {
+        console.log("Logged in to google...");
+      })
+      .catch((error) => {
+        console.log("Error while Logging to google...");
+      });
+
+    // this.dataService.getDocuments().subscribe(data => {
+    //   debugger
+    // });
   }
 
   ngAfterViewInit() {
@@ -67,6 +80,7 @@ export class AppComponent {
         data => {
           this.syllabus = data;
           localStorage.setItem('syllabus', JSON.stringify(this.syllabus));
+
           this.loadPreferences();
         },
         error => {
@@ -114,6 +128,10 @@ export class AppComponent {
     }
 
     localStorage.setItem('preference', JSON.stringify(this.preference));
+    this.dataService.addDocument(this.preference, 'preference').subscribe(
+      (newId) => { console.log('New category added with ID:', newId) },
+      (error) => { console.error('Error adding category:', error) }
+    );
 
     this.loadProgress();
   }
@@ -211,7 +229,16 @@ export class AppComponent {
     this.preference.subcategory = "";
 
     localStorage.setItem('preference', JSON.stringify(this.preference));
+    this.dataService.addDocument(this.preference, 'preference').subscribe(
+      (newId) => { console.log('New category added with ID:', newId) },
+      (error) => { console.error('Error adding category:', error) }
+    );
+
     localStorage.setItem('progressMap', JSON.stringify(Array.from(this.progressMap.entries())));
+    // this.dataService.storeProgressMap(this.progressMap).subscribe(
+    //   (newId) => { console.log('New progressMap added with ID:', newId) },
+    //   (error) => { console.error('Error progressMap category:', error) }
+    // );
 
     this.loadProgress();
   }
@@ -231,6 +258,11 @@ export class AppComponent {
     this.preference.subcategory = problem.subcategory_slug;
 
     localStorage.setItem('preference', JSON.stringify(this.preference));
+    this.dataService.addDocument(this.preference, 'preference').subscribe(
+      (newId) => { console.log('New category added with ID:', newId) },
+      (error) => { console.error('Error adding category:', error) }
+    );
+
     localStorage.setItem('progressMap', JSON.stringify(Array.from(this.progressMap.entries())));
 
     this.loadProgress();
