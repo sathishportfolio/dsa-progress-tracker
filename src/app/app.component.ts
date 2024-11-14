@@ -1,4 +1,4 @@
-import { Component, inject, TemplateRef } from '@angular/core';
+import { Component, inject, AfterViewInit, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -37,6 +37,18 @@ export class AppComponent {
 
   ngOnInit() {
     this.loadProblems();
+  }
+
+  ngAfterViewInit() {
+    this.scrollToExpandedAccordion();
+  }
+
+  scrollToExpandedAccordion() {
+    const expandedAccordion = document.querySelector('.accordion-collapse.show');
+
+    if (expandedAccordion) {
+      expandedAccordion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   open(content: TemplateRef<any>, problem: Problem) {

@@ -22,13 +22,11 @@
 
     <div class="row align-items-center">
         <div class="col-2 mt-3 mb-3">
-            <label for="qualitySelect" class="me-2 mb-2"><b>Level :</b></label>
-
             <select class="form-select form-select-sm" [(ngModel)]="preference.level"
                 (ngModelChange)="updatePreferences('level', $event)">
                 <option *ngFor="let num of numbers" [value]="num">
-                    <ng-container *ngIf="num === 0; else showNum">{{ 'All' }}</ng-container>
-                    <ng-template #showNum>{{ num }}</ng-template>
+                    <ng-container *ngIf="num === 0; else showNum">Show all Levels</ng-container>
+                    <ng-template #showNum>Level {{ num }}</ng-template>
                 </option>
             </select>
         </div>
@@ -65,7 +63,7 @@
             [hidden]="preference.showCompleted == false && category.donePercent === 100">
             <h2 ngbAccordionHeader>
                 <button ngbAccordionButton class="d-flex justify-content-between align-items-center w-100">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <input class="form-check-input m-0 checkbox-tick" type="checkbox"
                             [checked]="category.donePercent === 100" (change)="updatecategoryStatus($event, category)">
                         <span class="ms-2">
@@ -74,7 +72,7 @@
                             }} )
                         </span>
                     </div>
-                    <div class="col-md-8" style="margin-top: 5px;">
+                    <div class="col-md-6" style="margin-top: 5px;">
                         <ngb-progressbar class="" type="primary" [value]="category.donePercent" [striped]="true"
                             [animated]="true">
                             <i>{{category.donePercent}} %</i>
@@ -150,13 +148,13 @@
                                                         <td class="text-center">
                                                             <a *ngIf="problem.post_link" [href]="problem.post_link"
                                                                 target="_blank">
-                                                                <img src="/assets/images/article.svg">
+                                                                <img src="./assets/images/article.svg">
                                                             </a>
                                                         </td>
                                                         <td class="text-center td-content">
                                                             <a *ngIf="problem.yt_link" [href]="problem.yt_link"
                                                                 target="_blank">
-                                                                <img src="/assets/images/yt.svg">
+                                                                <img src="./assets/images/yt.svg">
                                                             </a>
 
                                                             <ng-container
@@ -170,25 +168,25 @@
                                                         <td class="text-center">
                                                             <a *ngIf="problem.tufplus_link"
                                                                 [href]="problem.tufplus_link" target="_blank">
-                                                                <img src="/assets/images/tufplus.svg">
+                                                                <img src="./assets/images/tufplus.svg">
                                                             </a>
                                                         </td>
                                                         <td class="text-center">
                                                             <a *ngIf="problem.gfg_link" [href]="problem.gfg_link"
                                                                 target="_blank">
-                                                                <img src="/assets/images/gfg.svg">
+                                                                <img src="./assets/images/gfg.svg">
                                                             </a>
                                                         </td>
                                                         <td class="text-center">
                                                             <a *ngIf="problem.cs_link" [href]="problem.cs_link"
                                                                 target="_blank">
-                                                                <img src="/assets/images/csninja.png" width="30">
+                                                                <img src="./assets/images/csninja.png" width="30">
                                                             </a>
                                                         </td>
                                                         <td class="text-center">
                                                             <a *ngIf="problem.lc_link" [href]="problem.lc_link"
                                                                 target="_blank">
-                                                                <img src="/assets/images/lc.svg">
+                                                                <img src="./assets/images/lc.svg">
                                                             </a>
                                                         </td>
                                                         <!-- <td class="text-center">{{ problem.isDone | date: 'MMM dd,
