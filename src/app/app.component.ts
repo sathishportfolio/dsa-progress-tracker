@@ -37,8 +37,6 @@ export class AppComponent {
   constructor(private auth: Auth, private httpClient: HttpClient, private dataService: DataService) { }
 
   ngOnInit() {
-    this.loadProblems();
-
     signInWithEmailAndPassword(this.auth, "rsathishkumar4@gmail.com", "Easytype@2024")
       .then(() => {
         console.log("Logged in to google...");
@@ -47,9 +45,12 @@ export class AppComponent {
         console.log("Error while Logging to google...");
       });
 
-    // this.dataService.getDocuments().subscribe(data => {
-    //   debugger
-    // });
+    this.dataService.getDocumentsAsObservable().subscribe(progressData => {
+      localStorage.setItem('preference', JSON.stringify(progressData.preference));
+      localStorage.setItem('progressMap', progressData.progressMap);
+
+      this.loadProblems();
+    });
   }
 
   ngAfterViewInit() {
@@ -127,10 +128,11 @@ export class AppComponent {
         break;
     }
 
-    localStorage.setItem('preference', JSON.stringify(this.preference));
+    let storePreference = JSON.stringify(this.preference);
+    localStorage.setItem('preference', storePreference);
     this.dataService.addDocument(this.preference, 'preference').subscribe(
-      (newId) => { console.log('New category added with ID:', newId) },
-      (error) => { console.error('Error adding category:', error) }
+      (newId) => { console.log('Firebase Updated : :', newId) },
+      (error) => { console.error('Error Firebase Updating : ', error) }
     );
 
     this.loadProgress();
@@ -228,17 +230,19 @@ export class AppComponent {
     this.preference.category = "";
     this.preference.subcategory = "";
 
-    localStorage.setItem('preference', JSON.stringify(this.preference));
+    let storePreference = JSON.stringify(this.preference);
+    localStorage.setItem('preference', storePreference);
     this.dataService.addDocument(this.preference, 'preference').subscribe(
-      (newId) => { console.log('New category added with ID:', newId) },
-      (error) => { console.error('Error adding category:', error) }
+      (newId) => { console.log('Firebase Updated : ', newId) },
+      (error) => { console.error('Error Firebase Updating : ', error) }
     );
 
-    localStorage.setItem('progressMap', JSON.stringify(Array.from(this.progressMap.entries())));
-    // this.dataService.storeProgressMap(this.progressMap).subscribe(
-    //   (newId) => { console.log('New progressMap added with ID:', newId) },
-    //   (error) => { console.error('Error progressMap category:', error) }
-    // );
+    let storeMap = JSON.stringify(Array.from(this.progressMap.entries()));
+    localStorage.setItem('progressMap', storeMap);
+    this.dataService.addDocument(storeMap, 'progressMap').subscribe(
+      (newId) => { console.log('Firebase Updated : ', newId) },
+      (error) => { console.error('Error Firebase Updating : ', error) }
+    );
 
     this.loadProgress();
   }
@@ -257,10 +261,11 @@ export class AppComponent {
     this.preference.category = problem.category_slug;
     this.preference.subcategory = problem.subcategory_slug;
 
-    localStorage.setItem('preference', JSON.stringify(this.preference));
+    let storePreference = JSON.stringify(this.preference);
+    localStorage.setItem('preference', storePreference);
     this.dataService.addDocument(this.preference, 'preference').subscribe(
-      (newId) => { console.log('New category added with ID:', newId) },
-      (error) => { console.error('Error adding category:', error) }
+      (newId) => { console.log('Firebase Updated : :', newId) },
+      (error) => { console.error('Error Firebase Updating : ', error) }
     );
 
     localStorage.setItem('progressMap', JSON.stringify(Array.from(this.progressMap.entries())));
