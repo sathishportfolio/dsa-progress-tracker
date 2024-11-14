@@ -6,7 +6,7 @@
     background-color: #343a40;
 }
 
-input[type="checkbox"] {
+.checkbox-tick {
     appearance: none;
     width: 25px;
     height: 25px;
@@ -18,12 +18,12 @@ input[type="checkbox"] {
     /* Added for proper positioning of the tick */
 }
 
-input[type="checkbox"]:checked {
+.checkbox-tick:checked {
     background-color: #4CAF50;
     border: none;
 }
 
-input[type="checkbox"]:checked::after {
+.checkbox-tick:checked::after {
     content: '';
     position: absolute;
     left: 9px;

@@ -33,8 +33,13 @@
             </select>
         </div>
 
-        <div class="col-1 ms-auto text-right">
-            <button type="button" class="btn btn-random">Random</button>
+        <div class="col-2 ms-auto text-right">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
+                    [checked]="preference.showCompleted" (change)="updatePreferences('showCompleted', $event)">
+                <b class="form-check-label" for="flexSwitchCheckChecked">Show Completed</b>
+            </div>
+            <!-- <button type="button" class="btn btn-random">Random</button> -->
         </div>
     </div>
 
@@ -56,13 +61,18 @@
 
     <div ngbAccordion [closeOthers]="true">
         @for (category of filteredSyllabus; track category) {
-        <div ngbAccordionItem [collapsed]="category.category_slug !== preference.category">
+        <div ngbAccordionItem [collapsed]="category.category_slug !== preference.category"
+            [hidden]="preference.showCompleted == false && category.donePercent === 100">
             <h2 ngbAccordionHeader>
                 <button ngbAccordionButton class="d-flex justify-content-between align-items-center w-100">
                     <div class="col-md-3">
-                        <span class="ms-2"> {{ category.category_name }} ( {{ category.doneProblems }} / {{
+                        <input class="form-check-input m-0 checkbox-tick" type="checkbox"
+                            [checked]="category.donePercent === 100" (change)="updatecategoryStatus($event, category)">
+                        <span class="ms-2">
+                            {{ category.category_name }} ( {{ category.doneProblems }} / {{
                             category.totalProblems
-                            }} )</span>
+                            }} )
+                        </span>
                     </div>
                     <div class="col-md-8" style="margin-top: 5px;">
                         <ngb-progressbar class="" type="primary" [value]="category.donePercent" [striped]="true"
@@ -79,7 +89,8 @@
                         <!-- Nested Accordion for Subcategories -->
                         <div ngbAccordion [closeOthers]="true">
                             @for (subcategory of category.subcategories; track subcategory) {
-                            <div ngbAccordionItem [collapsed]="subcategory.subcategory_slug !== preference.subcategory">
+                            <div ngbAccordionItem [collapsed]="subcategory.subcategory_slug !== preference.subcategory"
+                                [hidden]="preference.showCompleted == false && subcategory.donePercent === 100">
                                 <h2 ngbAccordionHeader>
                                     <button ngbAccordionButton>
                                         <!-- <input class="form-check-input" type="checkbox" /> -->
@@ -108,12 +119,12 @@
                                                 </thead>
                                                 <tbody>
                                                     @for (problem of subcategory.problems; track problem) {
-                                                    <tr>
+                                                    <tr [hidden]="preference.showCompleted == false && problem.isDone">
                                                         <td class="text-center">
                                                             <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    [(ngModel)]="problem.isDone"
-                                                                    (change)="onCheckboxChange($event, problem, problem.problem_id, 'done')">
+                                                                <input class="form-check-input checkbox-tick"
+                                                                    type="checkbox" [(ngModel)]="problem.isDone"
+                                                                    (change)="updateProblemStatus($event, problem, problem.problem_id, 'done')">
                                                             </div>
                                                         </td>
                                                         <td class="text-center">

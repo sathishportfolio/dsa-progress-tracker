@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { NgbAccordionModule, NgbProgressbarModule, ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Syllabus, Problem } from './models/Syllabus';
+import { Syllabus, Problem, Category } from './models/Syllabus';
 import { Preference } from './models/Preference';
 import { Progress } from './models/Progress';
 import { GroupedCategories } from './models/GroupedCategories';
@@ -94,6 +94,9 @@ export class AppComponent {
       case 'subcategory':
         this.preference.category = String(value);
         break;
+      case 'showCompleted':
+        this.preference.showCompleted = Boolean(value.target.checked);
+        break;
       default:
         break;
     }
@@ -118,65 +121,90 @@ export class AppComponent {
     if (storedProgressMap) {
       const parsedArray = JSON.parse(storedProgressMap);
       this.progressMap = new Map(parsedArray);
+    }
 
-      this.filteredSyllabus.forEach((category) => {
-        // Initialize counters for the category
-        category.totalProblems = 0;
-        category.doneProblems = 0;
+    this.filteredSyllabus.forEach((category) => {
+      // Initialize counters for the category
+      category.totalProblems = 0;
+      category.doneProblems = 0;
 
-        category.subcategories.forEach((subcategory) => {
-          // Initialize counters for the subcategory
-          subcategory.totalProblems = 0;
-          subcategory.doneProblems = 0;
+      category.subcategories.forEach((subcategory) => {
+        // Initialize counters for the subcategory
+        subcategory.totalProblems = 0;
+        subcategory.doneProblems = 0;
 
-          subcategory.problems.forEach((problem) => {
-            // Increment total problems count
-            subcategory.totalProblems++;
+        subcategory.problems.forEach((problem) => {
+          // Increment total problems count
+          subcategory.totalProblems++;
 
-            // Check if the problem is done and update accordingly
-            if (this.progressMap.has(problem.problem_id)) {
-              problem.isDone = this.progressMap.get(problem.problem_id)?.done;
-              if (problem.isDone) {
-                // Increment done problems count for subcategory and category
-                subcategory.doneProblems++;
-                category.doneProblems++;
-              }
+          // Check if the problem is done and update accordingly
+          if (this.progressMap.has(problem.problem_id)) {
+            problem.isDone = this.progressMap.get(problem.problem_id)?.done;
+            if (problem.isDone) {
+              // Increment done problems count for subcategory and category
+              subcategory.doneProblems++;
+              category.doneProblems++;
             }
-
-            // Increment total problems count for the category
-            category.totalProblems++;
-          });
-
-          // Calculate donePercent for the subcategory
-          if (subcategory.totalProblems > 0) {
-            subcategory.donePercent = Number(((subcategory.doneProblems / subcategory.totalProblems) * 100).toFixed(2));
-          } else {
-            subcategory.donePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
           }
+
+          // Increment total problems count for the category
+          category.totalProblems++;
         });
 
-        // Calculate donePercent for the category
-        if (category.totalProblems > 0) {
-          category.donePercent = Number(((category.doneProblems / category.totalProblems) * 100).toFixed(2));
+        // Calculate donePercent for the subcategory
+        if (subcategory.totalProblems > 0) {
+          subcategory.donePercent = Number(((subcategory.doneProblems / subcategory.totalProblems) * 100).toFixed(2));
         } else {
-          category.donePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
+          subcategory.donePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
         }
-
-        // Update filtered totals
-        this.filteredTotalProblems += category.totalProblems;
-        this.filteredDoneProblems += category.doneProblems;
       });
 
-      // Calculate filtered done percent after processing all categories
-      if (this.filteredTotalProblems > 0) {
-        this.filteredDonePercent = Number(((this.filteredDoneProblems / this.filteredTotalProblems) * 100).toFixed(2));
+      // Calculate donePercent for the category
+      if (category.totalProblems > 0) {
+        category.donePercent = Number(((category.doneProblems / category.totalProblems) * 100).toFixed(2));
       } else {
-        this.filteredDonePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
+        category.donePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
       }
+
+      // Update filtered totals
+      this.filteredTotalProblems += category.totalProblems;
+      this.filteredDoneProblems += category.doneProblems;
+    });
+
+    // Calculate filtered done percent after processing all categories
+    if (this.filteredTotalProblems > 0) {
+      this.filteredDonePercent = Number(((this.filteredDoneProblems / this.filteredTotalProblems) * 100).toFixed(2));
+    } else {
+      this.filteredDonePercent = Number('0.00'); // Avoid division by zero, set to string for consistency
     }
   }
 
-  onCheckboxChange(event: Event, problem: Problem, key: String, status: keyof Progress): void {
+  updatecategoryStatus(event: Event, category: Category): void {
+    const target = event.target as HTMLInputElement;
+
+    category.subcategories.forEach((subcategory) => {
+      subcategory.problems.forEach((problem) => {
+        if (target.checked) {
+          const progress = this.progressMap.get(problem.problem_id) || new Progress();
+          this.setProgress(progress, 'done');
+          this.progressMap.set(problem.problem_id, progress);
+        } else {
+          problem.isDone = false;
+          this.progressMap.delete(problem.problem_id);
+        }
+      });
+    });
+
+    this.preference.category = "";
+    this.preference.subcategory = "";
+
+    localStorage.setItem('preference', JSON.stringify(this.preference));
+    localStorage.setItem('progressMap', JSON.stringify(Array.from(this.progressMap.entries())));
+
+    this.loadProgress();
+  }
+
+  updateProblemStatus(event: Event, problem: Problem, key: String, status: keyof Progress): void {
     const target = event.target as HTMLInputElement;
 
     if (target.checked) {
