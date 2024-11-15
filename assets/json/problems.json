@@ -35,8 +35,7 @@
                         "sub_step_title": "Sorting-I",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/ASEQ9UKaDdQ/?access_token=d08f53a0-5d3b-4a84-9c8f-a1e0ae6c0453"
-                        ],
-                        "isDone": 1731638251246
+                        ]
                     },
                     {
                         "problem_id": "sorting_sorting_algorithms_bubblesort",
@@ -59,8 +58,7 @@
                         "sub_step_title": "Sorting-I",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/e73XQqtDfmK/?access_token=7c6000fa-e13b-4faa-a013-582cbcd592d8"
-                        ],
-                        "isDone": 1731638251246
+                        ]
                     },
                     {
                         "problem_id": "sorting_sorting_algorithms_insertionsorting",
@@ -83,8 +81,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3m3Gc4eYXpG/?access_token=425345a3-8e40-4e85-a4d3-1befb7967529"
-                        ],
-                        "isDone": 1731638251246
+                        ]
                     },
                     {
                         "problem_id": "sorting_sorting_algorithms_mergesorting",
@@ -107,8 +104,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BFQuesAYDxZ/?access_token=a42323b1-999e-4483-8830-1d58e174c888"
-                        ],
-                        "isDone": 1731638251246
+                        ]
                     },
                     {
                         "problem_id": "sorting_sorting_algorithms_quicksorting",
@@ -131,18 +127,11 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4FPCJCMrYB3/?access_token=d5252e19-94e5-444b-bda3-c266a14371d1"
-                        ],
-                        "isDone": 1731638251246
+                        ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 5,
-                "donePercent": 100
+                ]
             }
-        ],
-        "totalProblems": 5,
-        "doneProblems": 5,
-        "donePercent": 100
+        ]
     },
     {
         "category_id": "arrays",
@@ -180,8 +169,7 @@
                         "sub_step_title": "Easy",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BQFmSN8Xg5e/?access_token=6bfc003c-aa07-4ad8-8c15-c1f05dfd88e6"
-                        ],
-                        "isDone": 1731638252014
+                        ]
                     },
                     {
                         "problem_id": "arrays_arrays_fundamentals_largestelement",
@@ -205,8 +193,7 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3QAgtSFegyM/?access_token=3c2e3fd7-54ad-4b96-b445-e7b3f31181fa",
                             "https://app.tpstreams.com/embed/atsjxr/BUHZCba3y39/?access_token=eed9c87a-7c9b-43f6-837d-673754c6f0c7"
-                        ],
-                        "isDone": 1731638252014
+                        ]
                     },
                     {
                         "problem_id": "arrays_arrays_fundamentals_secondlargestelement",
@@ -231,8 +218,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/63G8Q7ahpKq/?access_token=6fea3101-f3d1-4f25-bb8f-3ba48bccd21a",
                             "https://app.tpstreams.com/embed/atsjxr/85XC4FxBKeD/?access_token=514d001c-2e62-4378-ac10-687c0ded4359",
                             "https://app.tpstreams.com/embed/atsjxr/3tJXxT49NjM/?access_token=8e7eebe8-e629-416e-bd34-f845d78201a1"
-                        ],
-                        "isDone": 1731638252014
+                        ]
                     },
                     {
                         "problem_id": "arrays_arrays_fundamentals_maximumconsecutiveones",
@@ -255,8 +241,7 @@
                         "sub_step_title": "Easy",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3CNndtNHrzZ/?access_token=100bae76-12ac-4410-b3c4-e2b880a26067"
-                        ],
-                        "isDone": 1731638252014
+                        ]
                     },
                     {
                         "problem_id": "arrays_arrays_fundamentals_leftrotatearraybyone",
@@ -279,8 +264,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9s9aDYJKAfd/?access_token=b282ea3e-00a9-479b-8a4b-418b3dbff3c7"
-                        ],
-                        "isDone": 1731638252014
+                        ]
                     },
                     {
                         "problem_id": "arrays_arrays_fundamentals_leftrotatearray",
@@ -304,13 +288,9 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/A2ZUmT4Y9XN/?access_token=fef74d73-baea-446b-aba1-173f1971c12d",
                             "https://app.tpstreams.com/embed/atsjxr/8X4ZRxF4pAp/?access_token=ccd70f82-2916-4af1-a4e6-319025b40ba1"
-                        ],
-                        "isDone": 1731638252014
+                        ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 6,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "arrays_logicbuilding",
@@ -443,10 +423,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/9pk7eYDT29D/?access_token=53711dc7-d4f0-479b-9129-f282cce25841"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "arrays_faqs(medium)",
@@ -703,10 +680,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/7KGhKdn6CD3/?access_token=13ced4df-037b-4eb1-a3de-f5f11f74246b"
                         ]
                     }
-                ],
-                "totalProblems": 10,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "arrays_faqs(hard)",
@@ -792,8 +766,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/339FhyX6hBZ/?access_token=c4c91ede-5cd9-45af-b6d7-82e38be7fa65",
                             "https://app.tpstreams.com/embed/atsjxr/NBSf4FpMJXn/?access_token=dd4d7b31-48c6-4cab-9bf1-961cb215c1d6",
                             "https://app.tpstreams.com/embed/atsjxr/9ezbMXMxdhP/?access_token=34e23f84-2949-45b3-9a8f-d3a8c2e6c425"
-                        ],
-                        "isDone": 1731640119516
+                        ]
                     },
                     {
                         "problem_id": "arrays_arrays_faqs(hard)_countinversions",
@@ -893,10 +866,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/4re67CxJkAM/?access_token=7317cd18-da27-417d-bfb2-2ecab7fd9b4c"
                         ]
                     }
-                ],
-                "totalProblems": 7,
-                "doneProblems": 1,
-                "donePercent": 14.29
+                ]
             },
             {
                 "subcategory_id": "arrays_contest",
@@ -906,15 +876,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 5,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 28,
-        "doneProblems": 7,
-        "donePercent": 25
+        ]
     },
     {
         "category_id": "hashing",
@@ -954,8 +918,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/7ahhAsMrx7R/?access_token=755d150a-0dd5-41a4-bcc6-e13dd5d52203",
                             "https://app.tpstreams.com/embed/atsjxr/BsUsJgkpRXq/?access_token=7cb6f8c6-448d-43ba-b5d2-d41c25d67873",
                             "https://app.tpstreams.com/embed/atsjxr/9kEKFmzeDMP/?access_token=e8b57c79-a277-41df-ad82-a94bf46a1591"
-                        ],
-                        "isDone": 1731638252710
+                        ]
                     },
                     {
                         "problem_id": "hashing_hashing_faqs_longestsubarraywithsumk-dup",
@@ -980,8 +943,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/ANtU5q9dBM2/?access_token=d851cda2-bc11-4b7a-ae6e-ca17f0914b24",
                             "https://app.tpstreams.com/embed/atsjxr/AMb87jPejBn/?access_token=2d4facf0-37cb-40d3-9e85-ace0d7e5436d",
                             "https://app.tpstreams.com/embed/atsjxr/3PZueZRy2em/?access_token=4595ee23-78ec-4408-8628-282c3c4b54ed"
-                        ],
-                        "isDone": 1731638252710
+                        ]
                     },
                     {
                         "problem_id": "hashing_hashing_faqs_countsubarrayswithgivensum-dup",
@@ -1006,8 +968,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/JChmAFH2b69/?access_token=af50b8a2-6a89-41d2-acd3-ccb2e336e872",
                             "https://app.tpstreams.com/embed/atsjxr/8D8spr7nBtN/?access_token=ee4068c9-0ea0-44d0-96cc-6e9f8b2bf33f",
                             "https://app.tpstreams.com/embed/atsjxr/5ehc4MykGna/?access_token=5233e331-49eb-4ed7-abd6-da25fbb2d40c"
-                        ],
-                        "isDone": 1731638252710
+                        ]
                     },
                     {
                         "problem_id": "hashing_hashing_faqs_countsubarrayswithgivenxork-dup",
@@ -1032,13 +993,9 @@
                             "https://app.tpstreams.com/embed/atsjxr/3CxaFEEbhCY/?access_token=606bf314-ea50-4303-bb56-6e18754d853d",
                             "https://app.tpstreams.com/embed/atsjxr/8uQbD4zCZRC/?access_token=e41a211f-6726-4393-acec-a401352a3bfa",
                             "https://app.tpstreams.com/embed/atsjxr/85aBec9cQtS/?access_token=6d847334-ca26-445e-b0db-bc78322a01c6"
-                        ],
-                        "isDone": 1731638252710
+                        ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 4,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "hashing_contest",
@@ -1048,15 +1005,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 2,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 4,
-        "doneProblems": 4,
-        "donePercent": 100
+        ]
     },
     {
         "category_id": "binarysearch",
@@ -1094,8 +1045,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4X36rPaUnMH/?access_token=7fdc71c5-86ae-450c-8425-0facf96310b2"
-                        ],
-                        "isDone": 1731599207007
+                        ]
                     },
                     {
                         "problem_id": "binarysearch_binarysearch_fundamentals_lowerbound",
@@ -1119,8 +1069,7 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7sDjbcgQSR7/?access_token=98cbf565-e84b-4d79-861e-c8c3bebb0bd5",
                             "https://app.tpstreams.com/embed/atsjxr/32NuhX2mDPE/?access_token=828a0352-b6a5-469d-b4c0-67db06d50f49"
-                        ],
-                        "isDone": 1731599207007
+                        ]
                     },
                     {
                         "problem_id": "binarysearch_binarysearch_fundamentals_upperbound",
@@ -1143,13 +1092,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3rc3kN89yeg/?access_token=b0afa45b-d393-49d0-9575-141a8550e77c"
-                        ],
-                        "isDone": 1731599207007
+                        ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 3,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "binarysearch_logicbuilding",
@@ -1349,10 +1294,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/A4Kz3BZxtxX/?access_token=60e94443-a30c-445a-8e03-74161de800d5"
                         ]
                     }
-                ],
-                "totalProblems": 8,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarysearch_onanswers",
@@ -1482,10 +1424,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/fTYZKjRgh39/?access_token=037f0333-da53-4016-aed1-3d1016ef5f25"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarysearch_faqs",
@@ -1663,10 +1602,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/8QpxqCFDhB6/?access_token=4ff7fbeb-6a69-462f-b2b7-8fe899b060f5"
                         ]
                     }
-                ],
-                "totalProblems": 7,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarysearch_2darrays",
@@ -1797,10 +1733,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/9zqjMrPqT2g/?access_token=a7052dfe-d39d-4954-947d-da6715706c91"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarysearch_contest",
@@ -1810,15 +1743,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 6,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 28,
-        "doneProblems": 3,
-        "donePercent": 10.71
+        ]
     },
     {
         "category_id": "recursion",
@@ -1857,8 +1784,7 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5NT8USnZKsx/?access_token=00b41aae-ff2e-447f-8aec-62c189db919b",
                             "https://app.tpstreams.com/embed/atsjxr/7PaYTDNp7se/?access_token=714f1bbf-2e82-420c-91b0-b29f4702fdc2"
-                        ],
-                        "isDone": 1731599208205
+                        ]
                     },
                     {
                         "problem_id": "recursion_recursion_implementation_generateparanthesis",
@@ -1881,8 +1807,7 @@
                         "sub_step_title": "Subsequences Pattern",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6ZEFCYAhAsh/?access_token=7f5e91e5-fcbd-4bb2-92a1-ada53577c147"
-                        ],
-                        "isDone": 1731599208205
+                        ]
                     },
                     {
                         "problem_id": "recursion_recursion_implementation_powerset",
@@ -1905,13 +1830,9 @@
                         "sub_step_title": "Interview Problems",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7zcFUUQm7kY/?access_token=661ffdb3-2e7c-48c7-8b3a-223ebe6c5379"
-                        ],
-                        "isDone": 1731599208205
+                        ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 3,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "recursion_subsequencepatternproblems",
@@ -1968,10 +1889,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/9UNu9SqzmBu/?access_token=ec529c14-b435-4732-9a31-1c324867190b"
                         ]
                     }
-                ],
-                "totalProblems": 2,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "recursion_faqs",
@@ -2097,10 +2015,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/93keXt6DqUn/?access_token=9ccaebc5-e1ec-4fc7-b24b-a6e5a94aa7fa"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "recursion_hard",
@@ -2134,10 +2049,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/3C3m4McxMF5/?access_token=acf7f957-b21d-406d-8fc1-b2a136b32d27"
                         ]
                     }
-                ],
-                "totalProblems": 1,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "recursion_faqs(hard)",
@@ -2286,10 +2198,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/AzZuT6bjKtn/?access_token=60e7d2f0-387f-4732-bae4-ea8e7ffbc148"
                         ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "recursion_contest",
@@ -2299,15 +2208,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 6,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 17,
-        "doneProblems": 3,
-        "donePercent": 17.65
+        ]
     },
     {
         "category_id": "linked-list",
@@ -2345,8 +2248,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/AgQrnqBBx5A/?access_token=6a96599f-9d81-44ed-ae63-5d4dbba2bf5c"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "linked-list_linked-list_fundamentals(singlell)_traversalinlinkedlist",
@@ -2369,8 +2271,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8pSAcR8d7Tu/?access_token=66e75a42-7616-4462-9803-e50e5e46417a"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "linked-list_linked-list_fundamentals(singlell)_deletioninlinkedlist",
@@ -2393,8 +2294,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/34AU5Dkp2aM/?access_token=a6605bc2-543a-41c0-93ff-00f1f108f734"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "linked-list_linked-list_fundamentals(singlell)_insertioninlinkedlist",
@@ -2417,8 +2317,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/63uhj9NMC3t/?access_token=383fbd8c-8820-4e6d-9c7b-a4fd9de3f64e"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_deletionoftheheadofll",
@@ -2441,8 +2340,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7AczNrruMmU/?access_token=951faedd-f09c-4bd1-8e89-d55e89045dfc"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_deletionofthetailofll",
@@ -2465,8 +2363,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/E5MHmUzAbxu/?access_token=ec053600-f940-49fe-991d-6e14b0ccedd3"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_deletionofthekthelementofll",
@@ -2489,8 +2386,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BnyUGzkNmq2/?access_token=0205a345-d402-4979-ab37-4a4adbe5231d"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_deletetheelementwithvaluex",
@@ -2513,8 +2409,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8CUDsGE2uxd/?access_token=f6a0e75b-41b3-4345-8512-36254933f0b3"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_insertionattheheadofll",
@@ -2537,8 +2432,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6Ue3jJ8nZHj/?access_token=e93fe49b-8d3b-4f9f-8739-ace0bcd2de4f"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_insertionatthetailofll",
@@ -2561,8 +2455,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6MZURSNJnHJ/?access_token=6b2dd36d-338a-4f20-9aec-86e14f674e2e"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_insertionatthekthposition",
@@ -2585,8 +2478,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9ZRFYK88bER/?access_token=33b9825e-a88a-40f4-9768-fd2e0b769287"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basiclinkedlist_insertionbeforethevaluex",
@@ -2609,13 +2501,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6EuQX5XYz3Z/?access_token=21a69521-068f-498c-ad73-bd969b626374"
-                        ],
-                        "isDone": 1731599209838
+                        ]
                     }
-                ],
-                "totalProblems": 12,
-                "doneProblems": 12,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "linked-list_fundamentals(doublyll)",
@@ -2902,10 +2790,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/8YD4XzcGUcY/?access_token=8bc34fcb-103a-4d78-a5da-1807a76763bc"
                         ]
                     }
-                ],
-                "totalProblems": 12,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "linked-list_logicbuilding",
@@ -3035,10 +2920,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/BGS3mSKS6DN/?access_token=e441d821-e197-4ba2-a4fc-4f7db6d02440"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "linked-list_faqs(medium)",
@@ -3218,10 +3100,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/BxbJXHDbKBE/?access_token=fc6e1aac-0749-4162-9b83-ae289bbf2041"
                         ]
                     }
-                ],
-                "totalProblems": 7,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "linked-list_faqs(hard)",
@@ -3374,10 +3253,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/3t9KPyK7qnH/?access_token=8164127c-da76-4c45-832a-25f3d523d604"
                         ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "linked-list_faqs(dll)",
@@ -3434,10 +3310,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/4TH7DR8a4GG/?access_token=a827a485-f7c1-4f20-892c-61b98a4473ec"
                         ]
                     }
-                ],
-                "totalProblems": 2,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "linked-list_contest",
@@ -3447,15 +3320,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 7,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 44,
-        "doneProblems": 12,
-        "donePercent": 27.27
+        ]
     },
     {
         "category_id": "bitmanipulation",
@@ -3495,10 +3362,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/4FYHAKjSEBj/?access_token=d6633163-4654-46a1-a03d-e015bafe172e"
                         ]
                     }
-                ],
-                "totalProblems": 1,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "bitmanipulation_problems",
@@ -3677,10 +3541,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/4Dbabn6dJ7D/?access_token=2b9ee222-f908-491f-bf19-1508e3ecec4e"
                         ]
                     }
-                ],
-                "totalProblems": 7,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "bitmanipulation_contest",
@@ -3690,15 +3551,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 3,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 8,
-        "doneProblems": 0,
-        "donePercent": 0
+        ]
     },
     {
         "category_id": "greedyalgorithms",
@@ -3736,8 +3591,7 @@
                         "sub_step_title": "DP on Subsequences",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9qu2cbKQpFU/?access_token=c82f86d0-3dd3-4d04-88ff-dee8b217c97e"
-                        ],
-                        "isDone": 1731599214006
+                        ]
                     },
                     {
                         "problem_id": "greedyalgorithms_greedyalgorithms_easy/medium_lemonadechange",
@@ -3760,8 +3614,7 @@
                         "sub_step_title": "Easy Problems",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9nsGgef7Nbk/?access_token=c117c6fb-1581-4d8b-882d-363027f10d45"
-                        ],
-                        "isDone": 1731599214006
+                        ]
                     },
                     {
                         "problem_id": "greedyalgorithms_greedyalgorithms_easy/medium_jumpgame-i",
@@ -3784,13 +3637,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3m67FEd2xJf/?access_token=37ded18b-59fe-4c63-a989-7d2f987dcae4"
-                        ],
-                        "isDone": 1731599214006
+                        ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 3,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "greedyalgorithms_schedulingandintervalproblems",
@@ -3940,10 +3789,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/7PcSfHRU5QU/?access_token=3e9d2cb7-8f47-49ec-91d0-f06b19851cd6"
                         ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "greedyalgorithms_hard",
@@ -4000,10 +3846,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/AypJfah3mdc/?access_token=c9b48c53-579c-4ef9-b3ce-4b8da80a4662"
                         ]
                     }
-                ],
-                "totalProblems": 2,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "greedyalgorithms_contest",
@@ -4013,15 +3856,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 4,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 11,
-        "doneProblems": 3,
-        "donePercent": 27.27
+        ]
     },
     {
         "category_id": "slidingwindow/2pointer",
@@ -4059,13 +3896,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7K2qaj6CbmG/?access_token=ddb79a42-1b26-4b8a-8b25-ec03359d0944"
-                        ],
-                        "isDone": 1731599214686
+                        ]
                     }
-                ],
-                "totalProblems": 1,
-                "doneProblems": 1,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "slidingwindow/2pointer_constantwindow",
@@ -4099,10 +3932,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/9GmKx2ENCdz/?access_token=cd5ce88b-11a6-4ce1-838f-fe130f00598d"
                         ]
                     }
-                ],
-                "totalProblems": 1,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "slidingwindow/2pointer_longestandsmallestwindowproblems",
@@ -4261,10 +4091,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/3CZTYadYQgz/?access_token=d5d2ece5-11d9-483d-b50a-264d51376784"
                         ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "slidingwindow/2pointer_countingsubarrayspattern",
@@ -4345,10 +4172,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/3B7cPqxSckh/?access_token=7d98fd3d-1781-4fd5-9ba4-75f506e7a273"
                         ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "slidingwindow/2pointer_contest",
@@ -4358,15 +4182,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 5,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 11,
-        "doneProblems": 1,
-        "donePercent": 9.09
+        ]
     },
     {
         "category_id": "stack/queues",
@@ -4404,8 +4222,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4CuUJ34z78N/?access_token=f139cbfb-f4d9-4392-8423-b9815937cfd5"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstacks_implementstackusingarrays",
@@ -4428,8 +4245,7 @@
                         "sub_step_title": "Learning",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/AHY8B3BE5Pu/?access_token=b65caf9e-82d5-4f86-94e3-dc288552c452"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstacks_implementqueueusingarrays",
@@ -4452,8 +4268,7 @@
                         "sub_step_title": "Learning",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4Mk6YSTgrgr/?access_token=f0704441-0f1f-4fc3-acf8-ff92a94854db"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstacks_implementstackusingqueue",
@@ -4476,8 +4291,7 @@
                         "sub_step_title": "Learning",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7KKXPhUtX9E/?access_token=11fe7574-33c8-4a6e-a6e6-364d6f353d86"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstacks_implementqueueusingstack",
@@ -4500,8 +4314,7 @@
                         "sub_step_title": "Learning",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3k8KbCx89gY/?access_token=662f8614-60fb-40ad-99b0-13d845e1c052"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstacks_implementstackusinglinkedlist",
@@ -4524,8 +4337,7 @@
                         "sub_step_title": "Learning",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4Qf6Chsyazk/?access_token=a67cc982-f870-4add-aa84-df9216230708"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstacks_implementqueueusinglinkedlist",
@@ -4548,8 +4360,7 @@
                         "sub_step_title": "Learning",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3D5AJKcNTNr/?access_token=79aa6509-4631-4cea-8400-c40ca33c2183"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     },
                     {
                         "problem_id": "stack/queues_stack/queues_implementation_balancedparanthesis",
@@ -4572,13 +4383,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/A68CcxtQNNU/?access_token=635ff6ae-e00c-4408-a6e2-150f93fd1955"
-                        ],
-                        "isDone": 1731599215207
+                        ]
                     }
-                ],
-                "totalProblems": 8,
-                "doneProblems": 8,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "stack/queues_monotonicstack",
@@ -4731,10 +4538,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/79uFs2Skjjg/?access_token=ca8db84b-7b16-4450-9d4e-adf4543c3091"
                         ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "stack/queues_faqs",
@@ -4956,15 +4760,9 @@
                         "sub_step_title": "Implementation Problems",
                         "videos_link": []
                     }
-                ],
-                "totalProblems": 9,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             }
-        ],
-        "totalProblems": 23,
-        "doneProblems": 8,
-        "donePercent": 34.78
+        ]
     },
     {
         "category_id": "heaps",
@@ -5000,8 +4798,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731638336156
+                        "videos_link": []
                     },
                     {
                         "problem_id": "heaps_heaps_implementationandtheory_checkifanarrayrepresentsaminheap",
@@ -5066,10 +4863,7 @@
                         "sub_step_title": null,
                         "videos_link": []
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 1,
-                "donePercent": 25
+                ]
             },
             {
                 "subcategory_id": "heaps_faqs",
@@ -5185,15 +4979,9 @@
                         "sub_step_title": "Hard Problems",
                         "videos_link": []
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             }
-        ],
-        "totalProblems": 9,
-        "doneProblems": 1,
-        "donePercent": 11.11
+        ]
     },
     {
         "category_id": "binarytrees",
@@ -5229,8 +5017,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599217458
+                        "videos_link": []
                     },
                     {
                         "problem_id": "binarytrees_binarytrees_theory/traversals_preordertraversal",
@@ -5251,8 +5038,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599217458
+                        "videos_link": []
                     },
                     {
                         "problem_id": "binarytrees_binarytrees_theory/traversals_inordertraversal",
@@ -5273,8 +5059,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599217458
+                        "videos_link": []
                     },
                     {
                         "problem_id": "binarytrees_binarytrees_theory/traversals_postordertraversal",
@@ -5295,8 +5080,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599217458
+                        "videos_link": []
                     },
                     {
                         "problem_id": "binarytrees_binarytrees_theory/traversals_levelordertraversal",
@@ -5319,8 +5103,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5snq68Hd4jy/?access_token=00afabc5-cb23-43ff-8450-402c3ff90dc8"
-                        ],
-                        "isDone": 1731599217458
+                        ]
                     },
                     {
                         "problem_id": "binarytrees_binarytrees_theory/traversals_pre,post,inorderinonetraversal",
@@ -5343,13 +5126,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5sFRjesNq88/?access_token=05088201-3694-4036-9ec3-cc9540e94afa"
-                        ],
-                        "isDone": 1731599217458
+                        ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 6,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "binarytrees_mediumproblems",
@@ -5498,10 +5277,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/BtHGASSSzyh/?access_token=7b0b6e6f-dfda-4255-85c4-133fd72a6b4d"
                         ]
                     }
-                ],
-                "totalProblems": 6,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarytrees_faqs",
@@ -5788,10 +5564,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/6ueHGQtsBpc/?access_token=78d4e614-bce6-440e-9283-888b85c45ae5"
                         ]
                     }
-                ],
-                "totalProblems": 12,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarytrees_constructionproblems",
@@ -5894,10 +5667,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/G2kSQpxgqYz/?access_token=18703edf-37c8-4088-9393-ad7b637933fa"
                         ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarytrees_traversalinconstantspace",
@@ -5954,10 +5724,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/7CmugFZBscQ/?access_token=06904e61-6e21-47c4-aca2-eff551d6cc81"
                         ]
                     }
-                ],
-                "totalProblems": 2,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarytrees_contest",
@@ -5967,15 +5734,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 6,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 30,
-        "doneProblems": 6,
-        "donePercent": 20
+        ]
     },
     {
         "category_id": "binarysearchtrees",
@@ -6013,8 +5774,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/B2e6P2PHjNY/?access_token=99743c34-628d-4d76-85f9-73693edbeba7"
-                        ],
-                        "isDone": 1731599218777
+                        ]
                     },
                     {
                         "problem_id": "binarysearchtrees_binarysearchtrees_theoryandbasics_searchinbst",
@@ -6037,8 +5797,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4uXKEhXM4DQ/?access_token=7baabf00-f98c-4df9-8f5d-c4f72df7693f"
-                        ],
-                        "isDone": 1731599218777
+                        ]
                     },
                     {
                         "problem_id": "binarysearchtrees_binarysearchtrees_theoryandbasics_floorinabst",
@@ -6062,13 +5821,9 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9bhJtFDMNGg/?access_token=80dc3133-906a-4561-bf76-a392bc0d9263",
                             "https://app.tpstreams.com/embed/atsjxr/BdgAq8b86MC/?access_token=12bfd8a0-71f9-4391-89ea-01d2aa0d5d99"
-                        ],
-                        "isDone": 1731599218777
+                        ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 3,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "binarysearchtrees_medium",
@@ -6240,10 +5995,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/6fJ6ThbApCa/?access_token=e616c329-362a-482f-97ab-e9a3f6b0ce65"
                         ]
                     }
-                ],
-                "totalProblems": 7,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarysearchtrees_faqs",
@@ -6346,10 +6098,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/79shKmrm74P/?access_token=32081eaf-3ae4-4da6-bed7-da89cd38dace"
                         ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "binarysearchtrees_contest",
@@ -6359,15 +6108,9 @@
                 "subcategory_name": "Contest",
                 "subcategory_rank": 4,
                 "subcategory_type": "contest",
-                "problems": [],
-                "totalProblems": 0,
-                "doneProblems": 0,
-                "donePercent": 0
+                "problems": []
             }
-        ],
-        "totalProblems": 14,
-        "doneProblems": 3,
-        "donePercent": 21.43
+        ]
     },
     {
         "category_id": "graphs",
@@ -6405,8 +6148,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/AQgDXebD7K9/?access_token=b8a11179-bad9-40d8-bb8b-50f646d22811"
-                        ],
-                        "isDone": 1731599219582
+                        ]
                     },
                     {
                         "problem_id": "graphs_graphs_theoryandtraversals_connectedcomponents",
@@ -6429,8 +6171,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/AyNcmTmbFGE/?access_token=feb9fff1-b321-4caf-9372-22d3b49be1c2"
-                        ],
-                        "isDone": 1731599219582
+                        ]
                     },
                     {
                         "problem_id": "graphs_graphs_theoryandtraversals_traversaltechniques",
@@ -6454,13 +6195,9 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4MH6kD6gTMc/?access_token=5761a6e3-cb53-4792-9d2f-ffc7b95421f2",
                             "https://app.tpstreams.com/embed/atsjxr/5GtqS6nsTte/?access_token=44cfaedd-76fc-48f1-b4cc-244cb6b6d80c"
-                        ],
-                        "isDone": 1731599219582
+                        ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 3,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "graphs_traversalproblems",
@@ -6655,10 +6392,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/XxM8Y4YYAZg/?access_token=eab0919b-182e-44a8-81ea-b9fa45cc306b"
                         ]
                     }
-                ],
-                "totalProblems": 8,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "graphs_cycles",
@@ -6762,10 +6496,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/BPJc26A5Q4k/?access_token=02a80b17-f8ae-4843-b075-e7772f8798c4"
                         ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "graphs_hardproblems",
@@ -6962,10 +6693,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/AqNrqHazFH2/?access_token=b8b6ff44-da06-41ec-bf7a-d3ba45e0e15b"
                         ]
                     }
-                ],
-                "totalProblems": 8,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "graphs_shortestpathalgorithms",
@@ -7206,10 +6934,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/6HAKgTjdMxg/?access_token=a35a6c55-b11d-4750-a92f-aae94ddb711c"
                         ]
                     }
-                ],
-                "totalProblems": 10,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "graphs_minimumspanningtree",
@@ -7291,10 +7016,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/5aGT7zkuJuK/?access_token=6b398a9c-63b7-4e19-ae19-e365a434bd15"
                         ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "graphs_hardproblemsii",
@@ -7420,10 +7142,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/dGuq9epDXnM/?access_token=6b5d991a-b1b5-4775-ba53-b92b6572fd51"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "graphs_additionalalgorithms",
@@ -7503,15 +7222,9 @@
                             "https://app.tpstreams.com/embed/atsjxr/52uhXDpCEDH/?access_token=d2f5a7d2-bdc1-49fc-b950-ec95849235ba"
                         ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             }
-        ],
-        "totalProblems": 44,
-        "doneProblems": 3,
-        "donePercent": 6.82
+        ]
     },
     {
         "category_id": "dynamicprogramming",
@@ -7549,13 +7262,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6Yme2TSqQH2/?access_token=12d60c85-bd56-4ec4-8327-98aeec5faa2d"
-                        ],
-                        "isDone": 1731599220207
+                        ]
                     }
-                ],
-                "totalProblems": 1,
-                "doneProblems": 1,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "dynamicprogramming_1ddp",
@@ -7684,10 +7393,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/39BbdtedQ7y/?access_token=0e1e76cb-747f-45bc-8070-1c35ae8a7e86"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "dynamicprogramming_2ddp",
@@ -7722,10 +7428,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/Bssk5nYNKHC/?access_token=25fb0fac-7e9c-4b82-b9f1-c8f7d69fa1ca"
                         ]
                     }
-                ],
-                "totalProblems": 1,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "dynamicprogramming_dpongrids",
@@ -7854,10 +7557,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/BRt8tbSHjdk/?access_token=22fb6027-e534-45d8-b6a7-57bffa5e0276"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "dynamicprogramming_dponstocks",
@@ -7985,10 +7685,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/5egaCgP3XkA/?access_token=0c69d3f8-1dea-45f7-b10b-04dc8f641c3a"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "dynamicprogramming_dponsubsequences",
@@ -8259,10 +7956,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/8pBSKfyF37c/?access_token=6733d7b2-21ee-469e-9482-035a6694bf67"
                         ]
                     }
-                ],
-                "totalProblems": 11,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "dynamicprogramming_dponstrings",
@@ -8484,10 +8178,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/Ad8sznyUbrz/?access_token=76b34841-f982-489d-bed5-d4c10c899b8c"
                         ]
                     }
-                ],
-                "totalProblems": 9,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "dynamicprogramming_mcmdp",
@@ -8594,15 +8285,9 @@
                             "https://app.tpstreams.com/embed/atsjxr/8QKMaadEfr4/?access_token=5eecc251-211c-4532-8da7-7aae5221c7d9"
                         ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             }
-        ],
-        "totalProblems": 41,
-        "doneProblems": 1,
-        "donePercent": 2.44
+        ]
     },
     {
         "category_id": "tries",
@@ -8640,8 +8325,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5Z6QTrdXYbQ/?access_token=423315c1-e36e-4a1f-8e7b-cda3336bd5a6"
-                        ],
-                        "isDone": 1731637821381
+                        ]
                     },
                     {
                         "problem_id": "tries_tries_triessubc_trieimplementationandadvancedoperations",
@@ -8666,10 +8350,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/47SfttuNtGk/?access_token=b3a639a8-caca-4f3a-9acc-47d31574d250"
                         ]
                     }
-                ],
-                "totalProblems": 2,
-                "doneProblems": 1,
-                "donePercent": 50
+                ]
             },
             {
                 "subcategory_id": "tries_problems",
@@ -8773,15 +8454,9 @@
                             "https://app.tpstreams.com/embed/atsjxr/8MGqdF7jAkc/?access_token=6c81e5e0-a16e-4f3f-8ebd-504f68322b40"
                         ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             }
-        ],
-        "totalProblems": 6,
-        "doneProblems": 1,
-        "donePercent": 16.67
+        ]
     },
     {
         "category_id": "strings(advancedalgo)",
@@ -8868,10 +8543,7 @@
                             "https://app.tpstreams.com/embed/atsjxr/3XgEjnDsgNh/?access_token=eb41b5b3-537e-4688-8219-7b4a66c74e6e"
                         ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             },
             {
                 "subcategory_id": "strings(advancedalgo)_advancedproblems(lessasked)",
@@ -9000,15 +8672,9 @@
                             "https://app.tpstreams.com/embed/atsjxr/Ftr7ZSTBrRx/?access_token=0a85eac4-04cf-43d3-9329-e83c2980c0c0"
                         ]
                     }
-                ],
-                "totalProblems": 5,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             }
-        ],
-        "totalProblems": 8,
-        "doneProblems": 0,
-        "donePercent": 0
+        ]
     },
     {
         "category_id": "maths",
@@ -9096,15 +8762,9 @@
                             "https://app.tpstreams.com/embed/atsjxr/AKcQ2XztEP3/?access_token=07e30ed9-1181-4962-b256-8d4bb36d7226"
                         ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 0,
-                "donePercent": 0
+                ]
             }
-        ],
-        "totalProblems": 3,
-        "doneProblems": 0,
-        "donePercent": 0
+        ]
     },
     {
         "category_id": "extras",
@@ -9142,8 +8802,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9e8p5ZzH3hp/?access_token=dc8bfa40-15eb-47ac-a9b8-489edc1d73e1"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "fundamentals_fundamentals_basics_cpporjava",
@@ -9166,8 +8825,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5RFAHhrpsR6/?access_token=aa62e859-dee6-4363-b59d-75a0e59f5deb"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_javasetup",
@@ -9190,8 +8848,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/XFKmknpAMYX/?access_token=f85220b0-1d4f-4e04-85ea-49c1e4426c7f"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "fundamentals_fundamentals_basics_java",
@@ -9214,8 +8871,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7kyQEMHJ3f6/?access_token=a7576e53-fe9f-4ec3-8a37-695b8395ae40"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_javaoopsbasic",
@@ -9238,8 +8894,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7yqJYyjsFSY/?access_token=d4595090-283d-4d40-904b-83ca43a5420e"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_inputoutput",
@@ -9260,8 +8915,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_ifelseadultteenproblem",
@@ -9282,8 +8936,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_ifelseif",
@@ -9304,8 +8957,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_switchcase",
@@ -9326,8 +8978,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_sumoffirstlastelementinarray",
@@ -9348,8 +8999,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_printxnnumbersoftimes",
@@ -9370,8 +9020,7 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     },
                     {
                         "problem_id": "extras_fundamentals_basics_printlastcharacterofstring",
@@ -9392,13 +9041,9 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     }
-                ],
-                "totalProblems": 12,
-                "doneProblems": 12,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "fundamentals_logicbuilding(patterns)",
@@ -9430,8 +9075,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3XmAjXc8BP9/?access_token=01f03e53-4a77-4b1a-a9b8-fe0e37deb315"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_fundamentals_logicbuilding(patterns)_pattern2",
@@ -9454,13 +9098,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5RTAjakKqyQ/?access_token=62e1305a-d09f-489f-bdba-6e01750327ae"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 2,
-                "doneProblems": 2,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "extras_patterns",
@@ -9492,8 +9132,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8RPC275TjE8/?access_token=97eb98b1-a3cd-47c0-a44e-bed93324bd7d"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern2",
@@ -9516,8 +9155,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9DcdnGpeFMD/?access_token=08eb9eff-1862-40c7-9f53-8eebaa4ec831"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern3",
@@ -9540,8 +9178,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/XR669Hnc2PP/?access_token=cf74b90c-b778-4b33-8e3c-71b1d0476fd6"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern4",
@@ -9564,8 +9201,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8XhgdPGPxJb/?access_token=60c7868a-174f-44aa-9385-fe1f8a29c635"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern5",
@@ -9588,8 +9224,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/653nmcGeG3Q/?access_token=f869fbc0-793b-46cb-b9a5-616fed8a192d"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern6",
@@ -9612,8 +9247,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3Kc4qttEEDF/?access_token=d7164ce5-66d5-4eab-b817-3279b25856c5"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern7",
@@ -9636,8 +9270,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/74uGJMmY5TS/?access_token=5cd9313f-6e4b-4e40-b7d5-d322e9c9a869"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern8",
@@ -9660,8 +9293,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6gEs7Bg824t/?access_token=56aacf55-57dc-437b-a43e-c84ecc198311"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern9",
@@ -9684,8 +9316,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5RTGTPkexf2/?access_token=d375cb9a-50a7-4b5d-b20d-840a35be05e4"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern10",
@@ -9708,8 +9339,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/A7MGjjSzH8F/?access_token=b518f1b5-5a25-4eae-9782-d1b64e0181ad"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern11",
@@ -9732,8 +9362,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/72YYC2GEjjq/?access_token=a7a12732-12fb-4e7d-a638-a7935447f52a"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern12",
@@ -9756,8 +9385,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5RzeJ7fZZPB/?access_token=63780f20-063b-4296-b174-2bf327cdb3ba"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern13",
@@ -9780,8 +9408,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5QdAFRqxByr/?access_token=a172b29e-6d55-456d-bad9-092ac9e7041b"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern14",
@@ -9804,8 +9431,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9QNn5F5eFqN/?access_token=756b9339-de05-44c7-aef3-2eb8c35f1cb4"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern15",
@@ -9828,8 +9454,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/rDpsbqfEQER/?access_token=8262893d-5283-4ccc-a522-8df6b79328ab"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern16",
@@ -9852,8 +9477,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5NFE8Qm2kr9/?access_token=db590344-b69a-47c5-a518-662d38a8e3fb"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern17",
@@ -9876,8 +9500,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4MpU8tjuYBa/?access_token=4cafbff2-97f2-49dc-a956-f348a0391bdf"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern18",
@@ -9900,8 +9523,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4BdU8ySMpT8/?access_token=efe7aa67-9b7e-4386-8bdb-13549f56cda3"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern19",
@@ -9924,8 +9546,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/98aeGqmTguy/?access_token=61d59a4a-2eb4-4a19-b122-4d059d789a93"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern20",
@@ -9948,8 +9569,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/hQHdztucb3G/?access_token=3cdda4c4-7ec5-4e02-88f1-18719d5dc63f"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern21",
@@ -9972,8 +9592,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7P43k7eG3rr/?access_token=c9d03d03-ed09-42d1-817a-6a2fde30a108"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_patterns_pattern22",
@@ -9996,13 +9615,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/AUz3UrSYqFB/?access_token=f13f17f5-7391-46bb-af1f-603271117160"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 22,
-                "doneProblems": 22,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "fundamentals_timecomplexity",
@@ -10034,13 +9649,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/92UpDgQxx2y/?access_token=6e4a8816-9065-4570-8a99-faebeedbf228"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 1,
-                "doneProblems": 1,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "fundamentals_stlandcollections",
@@ -10072,8 +9683,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BmFEJf5JJpx/?access_token=b5ca0b0e-1132-4843-a7d1-290d2bc2871b"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "fundamentals_fundamentals_stlandcollections_javacollections",
@@ -10096,13 +9706,9 @@
                         "sub_step_title": "Learn STL/Java-Collections or similar thing in your\n            language",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7an9sJ2PBd2/?access_token=4374a195-7337-4307-8017-8ff12f9659b8"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 2,
-                "doneProblems": 2,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "fundamentals_conceptbasics",
@@ -10134,8 +9740,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/nSajjqshuQF/?access_token=c4f00195-6843-49e2-bbca-5f3e786ebcab"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "fundamentals_fundamentals_conceptbasics_basichashing",
@@ -10158,8 +9763,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9jRhRcz5K6m/?access_token=22054bd9-ea9b-47bd-a0b5-3b4ffe013fa2"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_fundamentals_conceptbasics_basichashing",
@@ -10182,8 +9786,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9pFBQfnf8DA/?access_token=9807e2c0-b175-414b-8bd7-4fdb213571d5"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_fundamentals_conceptbasics_basicstring",
@@ -10206,13 +9809,9 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/56UgTRmsgcD/?access_token=dd97075f-266b-4174-96e9-54b08fe78a52"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 4,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "extras_basicmaths",
@@ -10244,8 +9843,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7z9XCsZMUj7/?access_token=cadb9151-8f1c-4d58-a74e-4e6c9c2d7d37"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_countnumberofodddigitsinanumber",
@@ -10268,8 +9866,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/9cQF9G9uJjm/?access_token=11953ec0-7474-4f31-94d9-1d9962730656"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_reverseanumber",
@@ -10292,8 +9889,7 @@
                         "sub_step_title": "Know Basic Maths",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/88ZC84AXScg/?access_token=439c4ba0-a88e-4b6a-af66-41655344584a"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_palindromenumber",
@@ -10316,8 +9912,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/C8MkSu5N3Zt/?access_token=193227f7-615c-493d-be6b-0facb909ac3f"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_returnthelargestdigitinanumber",
@@ -10340,8 +9935,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8ZTdjb36Rdt/?access_token=9d36d49a-bc8b-416a-9f4c-8780369af07c"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_factorialofagivennumber",
@@ -10364,8 +9958,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6e73Y4x8QuJ/?access_token=28834f74-3f97-4c7c-ae8a-bf84cd480fab"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_checkifthenumberifarmstrong",
@@ -10388,8 +9981,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7HzucZnJ6SX/?access_token=0dee8493-c955-4556-9600-980de0494bdd"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_checkforperfectnumber",
@@ -10412,8 +10004,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4KtP4Y7Cmrp/?access_token=72a9c31e-bbf7-4496-9639-8c9d731d419b"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_checkforprimenumber",
@@ -10436,8 +10027,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3S5eUGrX4KB/?access_token=bcb46b18-c58e-4f0c-9a4b-4df899814f0c"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_countofprimenumberstilln",
@@ -10460,8 +10050,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6pMpS4ZqRGf/?access_token=4b2dbc43-5ed4-4bdc-8cf3-ca8a265b9501"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_gcdoftwonumbers",
@@ -10484,8 +10073,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/Bf527S2mdUg/?access_token=aae746b9-6d3d-42ee-ba93-bfe93881fb2a"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_lcmoftwonumbers",
@@ -10508,8 +10096,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6t4MS9JF2tr/?access_token=e8068b47-e612-45b9-8f24-bb1bfc48e701"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicmaths_divisorsofanumber",
@@ -10530,13 +10117,9 @@
                         "yt_link": null,
                         "step_title": null,
                         "sub_step_title": null,
-                        "videos_link": [],
-                        "isDone": 1731599227396
+                        "videos_link": []
                     }
-                ],
-                "totalProblems": 13,
-                "doneProblems": 13,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "extras_basicarrays",
@@ -10568,8 +10151,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/rBDccdDcFbd/?access_token=2dda043f-b0ae-44c4-aca7-1c5a251cda27"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicarrays_countofoddnumbersinarray",
@@ -10592,8 +10174,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BbQEaYy47Qk/?access_token=5f61a6f1-ae3a-40be-9503-1625442a3061"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicarrays_reverseanarray",
@@ -10616,8 +10197,7 @@
                         "sub_step_title": "Learn Basic Recursion",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4jQFxRxn5JG/?access_token=c8e934d1-9591-45a1-822f-ca01ab13120f"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicarrays_checkifthearrayissorted",
@@ -10640,13 +10220,9 @@
                         "sub_step_title": "Easy",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/66A7uzReepZ/?access_token=5b12d4d4-aaa7-42e2-9d3e-5e98be276e9a"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 4,
-                "doneProblems": 4,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "extras_basichashing",
@@ -10679,8 +10255,7 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BbduMtMDNEK/?access_token=b3adab61-5623-40d3-af78-7ebcea587cc5",
                             "https://app.tpstreams.com/embed/atsjxr/6YxY2uzyNXc/?access_token=a3748a50-7a31-42f8-9a4e-83934a553a7e"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basichashing_secondhighestoccurringelement",
@@ -10704,8 +10279,7 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/3aXHbjyEQeR/?access_token=a357e586-6b8c-4c1e-8136-7b092b2e82db",
                             "https://app.tpstreams.com/embed/atsjxr/98eZ6JYGu2j/?access_token=1a4fb77d-9fcd-42e3-9147-a1aedfe4feb5"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basichashing_sumofhighestandlowestfrequency",
@@ -10729,13 +10303,9 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4m2R9xnUM9n/?access_token=a2cc43ad-2279-4949-8b57-7d345a15ea92",
                             "https://app.tpstreams.com/embed/atsjxr/5QDeTrJNrdP/?access_token=c2b6996d-fa55-4f90-b4d8-185ed2f31d98"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 3,
-                "doneProblems": 3,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "extras_basicstrings",
@@ -10767,8 +10337,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BfhC46fkQza/?access_token=0256c055-460c-475c-addf-89b1c7c9a29b"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstrings_palindromecheck",
@@ -10791,8 +10360,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4m2dT7nBZsK/?access_token=fb482807-88e4-4792-97cc-1c3dbab3cc00"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstrings_largestoddnumberinastring",
@@ -10815,8 +10383,7 @@
                         "sub_step_title": "Basic and Easy String Problems",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/AmzSHjX8bdN/?access_token=19d92655-3330-4d92-8553-9c72ebf6f0a5"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstrings_longestcommonprefix",
@@ -10839,8 +10406,7 @@
                         "sub_step_title": "Basic and Easy String Problems",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7QXqt6Y62c9/?access_token=1ea064f7-03d8-4b2c-abd5-abc454275397"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstrings_isomorphicstring",
@@ -10863,8 +10429,7 @@
                         "sub_step_title": "Basic and Easy String Problems",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/5SkCG9qxPfq/?access_token=0571c868-8ce5-4ccb-82f7-7a90f733a176"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstrings_rotatestring",
@@ -10887,8 +10452,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/ABP4JpaBK34/?access_token=e47e37c7-2e09-47de-8213-5e255b28c772"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstrings_validanagram",
@@ -10912,8 +10476,7 @@
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8UuHen2e7za/?access_token=5469a1e5-f24d-4d6f-8826-9da52d0eec03",
                             "https://app.tpstreams.com/embed/atsjxr/6HK2ZzBNZRy/?access_token=63f9bda8-e7cf-4dcd-abd4-06adc7905ff2"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicstrings_sortcharactersbyfrequency",
@@ -10936,13 +10499,9 @@
                         "sub_step_title": "Medium String Problems",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/7nTXbRFz2Bd/?access_token=4124402f-c319-42e3-8922-11c93f5b9764"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 8,
-                "doneProblems": 8,
-                "donePercent": 100
+                ]
             },
             {
                 "subcategory_id": "extras_basicrecursion",
@@ -10974,8 +10533,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/57H4ShQAtp6/?access_token=ba656cf5-8a60-49e0-a302-50775f26320d"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_recursionconceptswithparameters",
@@ -10998,8 +10556,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/32QbdcGzT5p/?access_token=f8e85f7e-d036-4626-a4a8-09e0bd66e94e"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_factorialofagivennumber",
@@ -11022,8 +10579,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/6e73Y4x8QuJ/?access_token=28834f74-3f97-4c7c-ae8a-bf84cd480fab"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_sumoffirstnnumbers",
@@ -11046,8 +10602,7 @@
                         "sub_step_title": "Learn Basic Recursion",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8fHuxjQmHdm/?access_token=7f5b0d83-4858-41cc-9583-653ddf72db66"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_sumofarrayelements",
@@ -11070,8 +10625,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/rBDccdDcFbd/?access_token=2dda043f-b0ae-44c4-aca7-1c5a251cda27"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_reverseastring",
@@ -11094,8 +10648,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/BfhC46fkQza/?access_token=0256c055-460c-475c-addf-89b1c7c9a29b"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_checkifstringispalindromeornot",
@@ -11118,8 +10671,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/79UmK6A8u29/?access_token=72334371-4cda-4a99-83ab-2a7e26af9b8e"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_checkifanumberisprimeornot",
@@ -11142,8 +10694,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/8a6ZNfQpkj9/?access_token=b9be0be9-4bc3-46c5-be2e-ba426fc056a8"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_reverseanarray",
@@ -11166,8 +10717,7 @@
                         "sub_step_title": "Learn Basic Recursion",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/4jQFxRxn5JG/?access_token=c8e934d1-9591-45a1-822f-ca01ab13120f"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_checkifthearrayissorted",
@@ -11190,8 +10740,7 @@
                         "sub_step_title": "Easy",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/66A7uzReepZ/?access_token=5b12d4d4-aaa7-42e2-9d3e-5e98be276e9a"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_sumofdigitsinagivennumber",
@@ -11214,8 +10763,7 @@
                         "sub_step_title": null,
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/ATrtkMaRjxA/?access_token=cf3f562f-e4aa-49d2-9058-0887d5d06f99"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     },
                     {
                         "problem_id": "extras_extras_basicrecursion_fibonaccinumber",
@@ -11238,17 +10786,10 @@
                         "sub_step_title": "Learn Basic Recursion",
                         "videos_link": [
                             "https://app.tpstreams.com/embed/atsjxr/52H9Fk9Upk8/?access_token=ebb02489-02a1-4060-a2cc-70f3c4611aa2"
-                        ],
-                        "isDone": 1731599227396
+                        ]
                     }
-                ],
-                "totalProblems": 12,
-                "doneProblems": 12,
-                "donePercent": 100
+                ]
             }
-        ],
-        "totalProblems": 83,
-        "doneProblems": 83,
-        "donePercent": 100
+        ]
     }
 ]
