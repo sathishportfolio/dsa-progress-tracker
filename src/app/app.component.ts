@@ -70,8 +70,15 @@ export class AppComponent {
       });
 
     this.dataService.getDocumentsAsObservable().subscribe(progressData => {
-      localStorage.setItem('preference', JSON.stringify(progressData.preference));
-      localStorage.setItem('progressMap', progressData.progressMap);
+      if (progressData.preference) {
+        localStorage.setItem('preference', progressData.preference);
+      }
+      if (progressData.progressMap) {
+        localStorage.setItem('progressMap', progressData.progressMap);
+      }
+      if (progressData.syllabus) {
+        localStorage.setItem('syllabus', progressData.syllabus);
+      }
 
       this.loadProblems();
     });
@@ -125,23 +132,26 @@ export class AppComponent {
   onSubmit() {
     if (this.myForm.valid) {
       if (this.syllabus) {
-        let problemFound = false; // Flag to track if the problem was found
+        let problemFound = false;
 
         this.syllabus.forEach((category) => {
           category.subcategories.forEach((subcategory) => {
             subcategory.problems.forEach((problem) => {
               if (problem.problem_id === this.myForm.value.problem_id) {
-                // Update the properties of the existing problem
                 Object.assign(problem, this.myForm.value);
-                problemFound = true; // Set flag to true
+                problemFound = true;
               }
             });
           });
         });
 
-        // Only update local storage if we found and updated a problem
         if (problemFound) {
-          localStorage.setItem('syllabus', JSON.stringify(this.syllabus));
+          let storeSyllabus = JSON.stringify(this.syllabus);
+          localStorage.setItem('syllabus', storeSyllabus);
+          this.dataService.addDocument(storeSyllabus, 'syllabus').subscribe(
+            (newId) => { console.log('Firebase Updated : ', newId) },
+            (error) => { console.error('Error Firebase Updating : ', error) }
+          );
         }
       }
       this.modalService.dismissAll();
@@ -160,7 +170,13 @@ export class AppComponent {
       this.httpClient.get<Syllabus>('assets/json/problems.json').subscribe(
         data => {
           this.syllabus = data;
-          localStorage.setItem('syllabus', JSON.stringify(this.syllabus));
+
+          let storeSyllabus = JSON.stringify(this.syllabus);
+          localStorage.setItem('syllabus', storeSyllabus);
+          this.dataService.addDocument(storeSyllabus, 'syllabus').subscribe(
+            (newId) => { console.log('Firebase Updated : ', newId) },
+            (error) => { console.error('Error Firebase Updating : ', error) }
+          );
 
           this.loadPreferences();
         },
@@ -210,7 +226,7 @@ export class AppComponent {
 
     let storePreference = JSON.stringify(this.preference);
     localStorage.setItem('preference', storePreference);
-    this.dataService.addDocument(this.preference, 'preference').subscribe(
+    this.dataService.addDocument(storePreference, 'preference').subscribe(
       (newId) => { console.log('Firebase Updated : ', newId) },
       (error) => { console.error('Error Firebase Updating : ', error) }
     );
@@ -312,7 +328,7 @@ export class AppComponent {
 
     let storePreference = JSON.stringify(this.preference);
     localStorage.setItem('preference', storePreference);
-    this.dataService.addDocument(this.preference, 'preference').subscribe(
+    this.dataService.addDocument(storePreference, 'preference').subscribe(
       (newId) => { console.log('Firebase Updated : ', newId) },
       (error) => { console.error('Error Firebase Updating : ', error) }
     );
@@ -343,7 +359,7 @@ export class AppComponent {
 
     let storePreference = JSON.stringify(this.preference);
     localStorage.setItem('preference', storePreference);
-    this.dataService.addDocument(this.preference, 'preference').subscribe(
+    this.dataService.addDocument(storePreference, 'preference').subscribe(
       (newId) => { console.log('Firebase Updated : ', newId) },
       (error) => { console.error('Error Firebase Updating : ', error) }
     );

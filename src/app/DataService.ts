@@ -31,7 +31,7 @@ export class DataService {
         const firestore = getFirestore();
 
         // Define the hardcoded custom IDs
-        const customIds = ['preference', 'progressMap'];
+        const customIds = ['preference', 'progressMap', 'syllabus'];
 
         // Create an array of observables for each document
         const observables = customIds.map(customId => {
@@ -40,7 +40,8 @@ export class DataService {
                 if (docSnap.exists()) {
                     return docSnap.data(); // Return data in the desired format
                 } else {
-                    throw new Error(`No document found with ID: ${customId}`);
+                    // throw new Error(`No document found with ID: ${customId}`);
+                    return {};
                 }
             }));
         });
