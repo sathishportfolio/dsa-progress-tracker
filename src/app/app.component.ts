@@ -6,7 +6,7 @@ import { NgbAccordionModule, NgbProgressbarModule, ModalDismissReasons, NgbModal
 import { Syllabus, Problem, Category } from './models/Syllabus';
 import { Preference } from './models/Preference';
 import { Progress } from './models/Progress';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { Auth, signInWithEmailAndPassword } from '@angular/fire/auth';
 import { DataService } from './DataService';
@@ -14,7 +14,7 @@ import { DataService } from './DataService';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, HttpClientModule, NgbAccordionModule, NgbProgressbarModule, FormsModule],
+  imports: [RouterOutlet, CommonModule, HttpClientModule, NgbAccordionModule, NgbProgressbarModule, FormsModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -32,9 +32,33 @@ export class AppComponent {
 
   private modalService = inject(NgbModal);
   closeResult = '';
-  selectedProblem!: Problem;
 
-  constructor(private auth: Auth, private httpClient: HttpClient, private dataService: DataService) { }
+  myForm: FormGroup;
+
+  constructor(private auth: Auth, private httpClient: HttpClient, private dataService: DataService, private fb: FormBuilder) {
+    this.myForm = new FormGroup({
+      problem_id: new FormControl(''),
+      category_id: new FormControl(''),
+      problem_slug: new FormControl(''),
+      subcategory_slug: new FormControl(''),
+      category_slug: new FormControl(''),
+      subcategory_id: new FormControl(''),
+      problem_name: new FormControl(''),
+      problem_rank: new FormControl(0), // Default value can be adjusted
+      hasIDE: new FormControl(0), // Default value can be adjusted
+      difficulty: new FormControl(null), // Can be null
+      tufplus_link: new FormControl(''),
+      lc_link: new FormControl(''),
+      cs_link: new FormControl(''),
+      gfg_link: new FormControl(''),
+      post_link: new FormControl(''),
+      yt_link: new FormControl(''),
+      step_title: new FormControl(''),
+      sub_step_title: new FormControl(''),
+      videos_link: new FormControl([]), // Initialize as an empty array
+      isDone: new FormControl(false), // Default value can be adjusted
+    });
+  }
 
   ngOnInit() {
     signInWithEmailAndPassword(this.auth, "rsathishkumar4@gmail.com", "Easytype@2024")
@@ -65,9 +89,65 @@ export class AppComponent {
     }
   }
 
-  open(content: TemplateRef<any>, problem: Problem) {
-    this.selectedProblem = problem;
-    this.modalService.open(content);
+  open(content: TemplateRef<any>, problem?: Problem) {
+    if (problem) {
+      // Patch the form with values from the selected problem
+      this.myForm.patchValue({
+        problem_id: problem.problem_id,
+        category_id: problem.category_id,
+        problem_slug: problem.problem_slug,
+        subcategory_slug: problem.subcategory_slug,
+        category_slug: problem.category_slug,
+        subcategory_id: problem.subcategory_id,
+        problem_name: problem.problem_name,
+        problem_rank: problem.problem_rank,
+        hasIDE: problem.hasIDE,
+        difficulty: problem.difficulty,
+        tufplus_link: problem.tufplus_link,
+        lc_link: problem.lc_link,
+        cs_link: problem.cs_link,
+        gfg_link: problem.gfg_link,
+        post_link: problem.post_link,
+        yt_link: problem.yt_link,
+        step_title: problem.step_title,
+        sub_step_title: problem.sub_step_title,
+        videos_link: problem.videos_link || [], // Ensure it's an array
+        isDone: problem.isDone || false, // Default to false if undefined
+      });
+    } else {
+      // Reset the form if no specific problem is provided (optional)
+      this.myForm.reset();
+    }
+
+    this.modalService.open(content); // Open the modal
+  }
+
+  onSubmit() {
+    if (this.myForm.valid) {
+      if (this.syllabus) {
+        let problemFound = false; // Flag to track if the problem was found
+
+        this.syllabus.forEach((category) => {
+          category.subcategories.forEach((subcategory) => {
+            subcategory.problems.forEach((problem) => {
+              if (problem.problem_id === this.myForm.value.problem_id) {
+                // Update the properties of the existing problem
+                Object.assign(problem, this.myForm.value);
+                problemFound = true; // Set flag to true
+              }
+            });
+          });
+        });
+
+        // Only update local storage if we found and updated a problem
+        if (problemFound) {
+          localStorage.setItem('syllabus', JSON.stringify(this.syllabus));
+        }
+      }
+      this.modalService.dismissAll();
+    } else {
+      console.error('Form is invalid');
+    }
   }
 
   private loadProblems(): void {

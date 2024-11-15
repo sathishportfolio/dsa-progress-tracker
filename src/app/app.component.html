@@ -1,23 +1,88 @@
 <div class="container">
 
-    <!-- <ng-template #content let-modal>
+    <ng-template #content let-modal>
         <div class="modal-header">
-            <h4 class="modal-title" id="modal-basic-title">Update problem</h4>
+            <h4 class="modal-title" id="modal-basic-title">{{myForm.get('problem_name')?.value}}</h4>
             <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
         </div>
         <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                    <label for="dateOfBirth">Problem name</label>
-                    <input type="text" class="form-control" name="name" [value]="selectedProblem.name"
-                        (input)="selectedProblem.name = $event.target.value" />
+            <form [formGroup]="myForm">
+                <!-- <div class="mb-3">
+                                    <label for="problem_name" class="form-label">Problem Name:</label>
+                                    <input id="problem_name" formControlName="problem_name" class="form-control" />
+                                </div> -->
+                <!-- <div class="mb-3">
+                                    <label for="problem_rank" class="form-label">Problem Rank:</label>
+                                    <input id="problem_rank" type="number" formControlName="problem_rank" class="form-control" />
+                                </div> -->
+                <!-- <div class="mb-3">
+                                    <label for="hasIDE" class="form-label">Has IDE:</label>
+                                    <select id="hasIDE" formControlName="hasIDE" class="form-select">
+                                        <option value="1">Yes</option>
+                                        <option value="0">No</option>
+                                    </select>
+                                </div> -->
+                <!-- <div class="mb-3">
+                                                    <label for="tufplus_link" class="form-label">TufPlus Link:</label>
+                                                    <input id="tufplus_link" formControlName="tufplus_link" class="form-control" />
+                                                </div> -->
+                <!-- <div class="mb-3">
+                                                                    <label for="step_title" class="form-label">Step Title:</label>
+                                                                    <input id="step_title" formControlName="step_title" class="form-control" />
+                                                                </div>
+                                                                <div class='mb-3'>
+                                                                    <label for='sub_step_title' class='form-label'>Sub Step Title:</label>
+                                                                    <input id='sub_step_title' formControlName='sub_step_title' class='form-control' />
+                                                                </div> -->
+                <!-- Add additional fields as necessary -->
+                <div class="mb-3 row">
+                    <label for="difficulty" class="col-sm-4 col-form-label">Difficulty:</label>
+                    <div class="col-sm-8">
+                        <select id="difficulty" formControlName="difficulty" class="form-select">
+                            <option value="" disabled selected>- Select Difficulty -</option>
+                            <option value="1">Easy</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Hard</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="post_link" class="col-sm-4 col-form-label">Article Link:</label>
+                    <div class="col-sm-8">
+                        <input id="post_link" formControlName="post_link" class="form-control" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="lc_link" class="col-sm-4 col-form-label">LeetCode Link:</label>
+                    <div class="col-sm-8">
+                        <input id="lc_link" formControlName="lc_link" class="form-control" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="cs_link" class="col-sm-4 col-form-label">CodeSignal Link:</label>
+                    <div class="col-sm-8">
+                        <input id="cs_link" formControlName="cs_link" class="form-control" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="gfg_link" class="col-sm-4 col-form-label">GeeksforGeeks Link:</label>
+                    <div class="col-sm-8">
+                        <input id="gfg_link" formControlName="gfg_link" class="form-control" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="yt_link" class="col-sm-4 col-form-label">YouTube Link:</label>
+                    <div class="col-sm-8">
+                        <input id="yt_link" formControlName="yt_link" class="form-control" />
+                    </div>
                 </div>
             </form>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" (click)="modal.close('Save click')">Save</button>
+        <div class='modal-footer'>
+            <button type='button' class='btn btn-outline-secondary' (click)="modal.close('Close click')">Close</button>
+            <button type='button' class='btn btn-primary' (click)="onSubmit()">Update</button> <!-- Update button -->
         </div>
-    </ng-template> -->
+    </ng-template>
 
 
     <div class="row align-items-center">
@@ -137,13 +202,14 @@
                                                                 class="badge bg-danger">Hard</span>
                                                         </td>
                                                         <td>
-                                                            <!-- <a href="javascript:void" (click)="open(content, problem)">
+                                                            <a href="javascript:void(0)"
+                                                                (click)="open(content, problem)">
                                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                                     viewBox="0 0 24 24" width="24px" height="24px">
                                                                     <path fill="#7D7F7D"
                                                                         d="M 18 2 L 15.585938 4.4140625 L 19.585938 8.4140625 L 22 6 L 18 2 z M 14.076172 5.9238281 L 3 17 L 3 21 L 7 21 L 18.076172 9.9238281 L 14.076172 5.9238281 z" />
                                                                 </svg>
-                                                            </a> -->
+                                                            </a>
 
                                                             {{ problem.problem_name }}
 
