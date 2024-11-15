@@ -131,7 +131,7 @@ export class AppComponent {
     let storePreference = JSON.stringify(this.preference);
     localStorage.setItem('preference', storePreference);
     this.dataService.addDocument(this.preference, 'preference').subscribe(
-      (newId) => { console.log('Firebase Updated : :', newId) },
+      (newId) => { console.log('Firebase Updated : ', newId) },
       (error) => { console.error('Error Firebase Updating : ', error) }
     );
 
@@ -264,11 +264,16 @@ export class AppComponent {
     let storePreference = JSON.stringify(this.preference);
     localStorage.setItem('preference', storePreference);
     this.dataService.addDocument(this.preference, 'preference').subscribe(
-      (newId) => { console.log('Firebase Updated : :', newId) },
+      (newId) => { console.log('Firebase Updated : ', newId) },
       (error) => { console.error('Error Firebase Updating : ', error) }
     );
 
-    localStorage.setItem('progressMap', JSON.stringify(Array.from(this.progressMap.entries())));
+    let storeMap = JSON.stringify(Array.from(this.progressMap.entries()));
+    localStorage.setItem('progressMap', storeMap);
+    this.dataService.addDocument(storeMap, 'progressMap').subscribe(
+      (newId) => { console.log('Firebase Updated : ', newId) },
+      (error) => { console.error('Error Firebase Updating : ', error) }
+    );
 
     this.loadProgress();
   }

@@ -31,7 +31,7 @@
             </select>
         </div>
 
-        <div class="col-2 ms-auto text-right">
+        <div class="col-3">
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"
                     [checked]="preference.showCompleted" (change)="updatePreferences('showCompleted', $event)">
@@ -72,18 +72,21 @@
                             }} )
                         </span>
                     </div>
-                    <div class="col-md-6" style="margin-top: 5px;">
-                        <ngb-progressbar class="" type="primary" [value]="category.donePercent" [striped]="true"
-                            [animated]="true">
-                            <i>{{category.donePercent}} %</i>
-                        </ngb-progressbar>
-                    </div>
+
                 </button>
             </h2>
             <div ngbAccordionCollapse>
                 <div ngbAccordionBody>
                     <ng-template>
-
+                        <div class="row">
+                            <!-- <div class="col-md-2"><b>Progress : </b></div> -->
+                            <div class="mb-3">
+                                <ngb-progressbar class="" type="primary" [value]="category.donePercent" [striped]="true"
+                                    [animated]="true">
+                                    <i>{{category.donePercent}} %</i>
+                                </ngb-progressbar>
+                            </div>
+                        </div>
                         <!-- Nested Accordion for Subcategories -->
                         <div ngbAccordion [closeOthers]="true">
                             @for (subcategory of category.subcategories; track subcategory) {
@@ -117,7 +120,7 @@
                                                 </thead>
                                                 <tbody>
                                                     @for (problem of subcategory.problems; track problem) {
-                                                    <tr [hidden]="preference.showCompleted == false && problem.isDone">
+                                                    <tr>
                                                         <td class="text-center">
                                                             <div class="form-check form-check-inline">
                                                                 <input class="form-check-input checkbox-tick"
