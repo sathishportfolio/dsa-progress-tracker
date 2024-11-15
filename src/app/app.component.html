@@ -81,9 +81,14 @@
     <ng-container>
         <div class="row">
             <div class="col-md-4">
+                <div class="spinner-border spinner-border-sm mr-3" role="status" *ngIf="filteredTotalProblems == 0">
+                    <span class="sr-only"></span>
+                </div>
+
                 <b style="color: orangered"><span *ngIf="preference.level">Level {{ preference.level }}</span> Progress
                     ( {{filteredDoneProblems}} of {{filteredTotalProblems}} -
                     Remaining {{filteredTotalProblems-filteredDoneProblems}} ) : </b>
+
             </div>
             <div class="col-md-8" style="margin-top: 5px;">
                 <ngb-progressbar class="mb-3" type="warning" [value]="filteredDonePercent" [striped]="true"
@@ -94,7 +99,7 @@
         </div>
     </ng-container>
 
-    <div ngbAccordion [closeOthers]="true">
+    <div ngbAccordion [closeOthers]="true" *ngIf="filteredTotalProblems != 0">
         @for (category of filteredSyllabus; track category) {
         <div ngbAccordionItem [collapsed]="category.category_slug !== preference.category"
             [hidden]="preference.showCompleted == false && category.donePercent === 100">
